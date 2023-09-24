@@ -15,7 +15,7 @@ export default function ProjectCard({}: Props) {
   return (
     <div className="w-full h-fit-content flex flex-col lg:flex-row items-center justify-between">
       <Image src={TutorMundi} alt="tutormundi" className="w-[300px] lg:w-[450px] h-fit-content object-cover rounded-sm pb-4 lg:pb-0"/>
-      <div className="flex flex-col px-4 gap-y-2">
+      <div className="flex flex-col px-4 gap-y-2 max-w-2xl items-center lg:items-start">
         <h2 className="text-ap-black font-bold text-xl lg:text-2xl">TutorMundi internship entrance exam</h2>
         <div className="flex flex-row justify-start items-center gap-2">
           <p className="font-bold text-base text-ap-gray">Developed with:</p>
@@ -24,7 +24,7 @@ export default function ProjectCard({}: Props) {
           <Image src={JavaScript} alt="JavaScript" className="w-8 h-8"/>
           <Image src={Nextjs} alt="Nextjs" className="w-8 h-8"/>
         </div>
-        <p className="text-ap-black font-light">As one of the challenges of the internship selection process, I was asked to program an evaluation page that was faithful to the Figma provided. The choice of programming languages and framework was free and I chose to develop it using Next.js. The expected behavior of this page was that when the user evaluate the monitoring, the clicked star and the ones on the left of it would turn gold. Aditionally, the confirm button is only enabled after a evaluation.</p>
+        <p className="text-ap-black font-light text-center lg:text-start">As one of the challenges of the internship selection process, I was asked to program an evaluation page that was faithful to the Figma provided. The choice of programming languages and framework was free and I chose to develop it using Next.js. The expected behavior of this page was that when the user evaluate the monitoring, the clicked star and the ones on the left of it would turn gold. Aditionally, the confirm button is only enabled after a evaluation.</p>
         <div className="flex flw-row gap-4">
           <a href="https://alexaandrepaiva.github.io/TutorMundi/">
             <button className="bg-ap-white rounded-sm px-4 py-2 flex flw-row gap-x-2 border border-ap-black">

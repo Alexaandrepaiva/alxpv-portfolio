@@ -11,7 +11,7 @@ export default function ExperienceCard({}: Props) {
   return (
     <div className="w-full h-fit-content flex flex-col lg:flex-row items-center justify-center gap-x-0 lg:gap-x-8 gap-y-4 lg:gap-y-0">
         <Image src={IME} alt="ime" className="w-32 h-32 lg:w-42 lg:h-42 rounded-full object-cover"/>
-      <div className="flex flex-col px-4 gap-y-2 max-w-xl">
+      <div className="flex flex-col px-4 gap-y-2 max-w-xl items-center lg:items-start">
         <h2 className="text-ap-white font-bold text-xl lg:text-2xl">
           Scientific researcher -
           <span className="text-ap-yellow"> Instituto Militar de Engenharia</span>
@@ -23,7 +23,7 @@ export default function ExperienceCard({}: Props) {
           <Image src={Cplusplus} alt="cpp" className="w-8 h-8"/>
         </div>
         <h3 className="text-ap-pink/60 font-base">February 2022 - <span className="text-ap-green/60 font-base">January 2024</span></h3>
-        <p className="text-ap-white font-light">Member of a team responsible for studying environments and function behaviors and developing Python programs to optimize execution time. </p>    
+        <p className="text-ap-white font-light text-center lg:text-start">Member of a team responsible for studying environments and function behaviors and developing Python programs to optimize execution time. </p>    
       </div>
     </div>
   )

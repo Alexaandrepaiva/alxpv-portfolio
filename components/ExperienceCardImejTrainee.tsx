@@ -31,7 +31,7 @@ export default function ExperienceCard({}: Props) {
   return (
     <div className="w-full h-fit-content flex flex-col lg:flex-row items-center justify-center gap-x-0 lg:gap-x-8 gap-y-4 lg:gap-y-0">
         <Image src={IMEJunior} alt="imejunior" className="w-32 h-32 lg:w-42 lg:h-42 rounded-full object-cover"/>
-      <div className="flex flex-col px-4 gap-y-2 max-w-xl">
+      <div className="flex flex-col px-4 gap-y-2 max-w-xl items-center lg:items-start">
         <h2 className="text-ap-white font-bold text-xl lg:text-2xl">
           Web/App developer  -
           <span className="text-ap-yellow"> IME Júnior</span>
@@ -47,7 +47,7 @@ export default function ExperienceCard({}: Props) {
           <Image src={Firebase} alt="c" className="w-8 h-8"/>
         </div>
         <h3 className="text-ap-pink/60 font-base">February 2021 - July 2022</h3>
-        <p className="text-ap-white font-light">As a member of the web and app developer team of the company, I have worked in three big projects: an app to allow a dentist to control his clients information and manage schedule, a website platform to control indications of clients, manage benefits for each indication such as reimbursement and a private e-commerce website for custom paintings and artwork, with payment system</p>    
+        <p className="text-ap-white font-light text-center lg:text-start">As a member of the web and app developer team of the company, I have worked in three big projects: an app to allow a dentist to control his clients information and manage schedule, a website platform to control indications of clients, manage benefits for each indication such as reimbursement and a private e-commerce website for custom paintings and artwork, with payment system</p>    
       </div>
     </div>
   )
