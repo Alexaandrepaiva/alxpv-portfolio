@@ -2,26 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components{
+  .heroButton {
+    @apply px-5 py-1 border border-gray-600 rounded-3xl uppercase text-xs tracking-widest text-ap-yellow opacity-50 transition-all hover:border-transparent hover:text-ap-gray
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .pageTitle {
+    @apply uppercase tracking-[20px] text-ap-black text-2xl flex  mb-4
+  }
+  .titleBox {
+    @apply bg-ap-yellow rounded-sm pl-4 py-2
+  }
+  .subTitleBox{
+    @apply bg-ap-black rounded-sm pl-4 py-2
+  }
+  .imageCard {
+    @apply w-20 h-20 rounded-full xl:w-24 xl:h-24 object-cover object-center
+  }
+  .imageTechUsed {
+    @apply h-8 md:h-10 w-auto
+  }
+  .projectCard {
+    @apply h-28 w-auto xl:h-32
+  }
+  .contactInput {
+    @apply outline-none bg-ap-darkgray text-white rounded-sm px-4 py-2 placeholder-gray-400 transition-all focus:bg-[#403e41] focus:text-ap-yellow hover:text-ap-yellow
+  }
 }
