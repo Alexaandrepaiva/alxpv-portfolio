@@ -8,14 +8,9 @@ import MongoDB from '@/public/icons/mongodb-original.svg'
 import ReactLanguage from '@/public/icons/react-original.svg'
 import Sass from '@/public/icons/sass-original.svg'
 
-type Props = {
-  position: string,
-  company: string,
-  date: string,
-  description: string
-}
-
-export default function ExperienceCard({position, company, date, description}:  Props) {
+export default function ExperienceCard(
+  { position, company, date, description}:
+  { position: string, company: string, date: string, description: string }){
   return (
     <div className="w-full h-fit-content flex flex-col lg:flex-row items-center justify-center gap-x-0 lg:gap-x-8 gap-y-4 lg:gap-y-0">
         <Image src={TutorMundi} alt="ime" className="w-32 h-32 lg:w-42 lg:h-42 rounded-full object-cover"/>
