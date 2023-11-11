@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import ProjectCardMilitaryRPG from './ProjectCardMilitaryRPG'
 import ProjectCardTutorMundiTrial from './ProjectCardTutorMundiTrial'
+import ProjectCardBestBet from './ProjectCardBestBet'
 
 type Props = {}
 
@@ -18,6 +19,7 @@ export default function Projects({}: Props) {
           My personal <span className="font-bold text-ap-yellow">projects</span>
         </h1>
         <div className="flex w-full flex-col lg:flex-rol items-start jusitfy-end gap-8 lg:gap-12 p-4 md:p-0">
+          <ProjectCardBestBet/>
           <ProjectCardTutorMundiTrial/>
           <ProjectCardMilitaryRPG/>
         </div>
