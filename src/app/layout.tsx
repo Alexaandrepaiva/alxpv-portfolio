@@ -2,6 +2,7 @@ import "~/styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "Alxpv | Portfolio",
@@ -18,6 +19,7 @@ export default function RootLayout({
     <html lang="en" className={`${GeistSans.variable}`}>
       <body>
         <LanguageProvider>{children}</LanguageProvider>
+        <Analytics />
       </body>
     </html>
   );
