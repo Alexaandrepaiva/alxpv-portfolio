@@ -1,6 +1,7 @@
 import { Navbar } from "~/components/Navbar";
 import { HeroSection } from "~/components/HeroSection";
 import { Footer } from "~/components/Footer";
+import { ExperienceSection } from "~/components/ExperienceSection";
 
 export default function HomePage() {
 
@@ -10,7 +11,7 @@ export default function HomePage() {
       <div className="max-w-6xl">
         <HeroSection />
         <section id="experience" className="container py-24 sm:py-32">
-          {/* Experience section content will be added later */}
+          <ExperienceSection />
         </section>
         <section id="education" className="container py-24 sm:py-32">
           {/* Education section content will be added later */}

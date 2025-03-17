@@ -5,6 +5,7 @@ import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuL
 import { SocialMediaButtonsGroup } from "~/components/SocialMediaButtonsGroup";
 import { LanguageSelector } from "~/components/LanguageSelector";
 import Link from "next/link";
+import Image from "next/image";
 
 const sections = ["home", "experience", "education", "projects", "skills", "contact"];
 
@@ -24,11 +25,8 @@ export function Navbar() {
         <div className="flex h-14 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
-              <span className="font-bold">ALXPV</span>
+              <Image src="/alxpv-black.png" alt="ALXPV Logo" width={80} height={30} className="h-auto" priority />
             </Link>
-            <div className="ml-4">
-              <LanguageSelector />
-            </div>
           </div>
 
           <NavigationMenu className="flex-1 flex justify-center">
@@ -46,7 +44,11 @@ export function Navbar() {
             </NavigationMenuList>
           </NavigationMenu>
 
-          <SocialMediaButtonsGroup />
+          <div className="flex space-between gap-4">
+            <SocialMediaButtonsGroup />
+
+            <LanguageSelector />
+          </div>
         </div>
       </div>
     </nav>

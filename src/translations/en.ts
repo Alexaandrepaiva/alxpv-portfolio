@@ -31,10 +31,60 @@ export const en = {
       title: "Experience",
       items: [
         {
-          role: "Senior Developer",
-          company: "Tech Corp",
-          period: "2020 - Present",
-          description: "Leading development team and implementing cloud solutions"
+          title: "Associate Product Manager and Fullstack Developer Junior",
+          company: "TutorMundi",
+          startDate: "April 2023",
+          avatar: "https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0sSFbMdz5tygmu5LxzRTcYHJ8abUeBPofQ0iWd",
+          skills: ["Meteor.js", "Node.js", "MongoDB", "NoSQL", "Figma", "Analytics"],
+          description: [
+            "Directed full product lifecycle from discovery to launch, including feature planning, technical and product specifications development, launch strategy creation, and post-launch performance validation and usability testing",
+            "Progressed from internship to full-time developer role. Engineered critical platform features including AI-powered automated response systems, voice functionality for live tutoring sessions, and a custom digital whiteboard solution",
+            "Mentored junior developers, resolved production bugs, maintained codebase quality, updated library versions, and analyzed feature performance through platform analytics"
+          ]
+        },
+        {
+          title: "Simulation Engineer Intern",
+          company: "CIAvEx",
+          startDate: "August 2024",
+          endDate: "December 2024",
+          avatar: "https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0sA4ntYPXuhnVZQSP9fXUmRcINExdzHCwjDoY2",
+          skills: ["Python", "Simulator"],
+          description: [
+            "Engineered a Python-based desktop simulator for helicopter radio navigation and communication equipment",
+            "Implemented mathematical models for radio signal propagation and navigation algorithms",
+            "Created a user-friendly interface allowing instructors to create various training scenarios",
+            "Collaborated with aviation experts to ensure simulator accuracy and educational effectiveness"
+          ]
+        },
+        {
+          title: "Scientific Researcher",
+          company: "LNCC",
+          startDate: "July 2022",
+          avatar: "https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0s1bNXWUnTEWtS2F59V4BdOAGcqnsUMp0JDZIR",
+          endDate: "June 2024",
+          skills: ["Python", "C++", "AI", "LLM"],
+          description: [
+            "Analyzed experimental runtime performance of optimization algorithms, implemented and tested various optimization strategies to enhance algorithm efficiency, including:",
+            "Programming language migrations for performance improvements",
+            "Storage method enhancements for improved I/O performance",
+            "Parallelization techniques for multi-core processing efficiency",
+            "Cache optimization strategies for numerical computing",
+            "Developed and trained a machine learning model to automatically measure and predict runtime performance of novel experimental algorithms"
+          ]
+        },
+        {
+          title: "Software Developer, Battalion Coordinator and CEO",
+          company: "IME Júnior",
+          startDate: "January 2021",
+          avatar: "https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0sMlmZVxrDmx1ClgsIuwLbBVnz3TQavr4GASKe",
+          endDate: "December 2023",
+          skills: ["HTML", "CSS", "JavaScript", "Tailwind", "Firebase", "Next.js", "Node.js", "SQL", "Postgres"],
+          description: [
+            "Progressed from trainee to CEO through multiple roles (Trainee, Member, Coordinator, President)",
+            "Developed three major client projects: • React Native personal diary application with payment system for a dentist • Next.js platform for Solar21 to manage referrals and referral benefits • E-commerce site for personalized artwork with integrated payment system",
+            "Planned, organized, and taught new members the necessary skills to become developers in the company's Computing Battalion",
+            "Served as legal and administrative representative, providing strategic direction and ensuring cohesive company operations while leading company to achieve R$100,000 target in closed projects through effective team management and calendar coordination, the highest income in history"
+          ]
         }
       ]
     },

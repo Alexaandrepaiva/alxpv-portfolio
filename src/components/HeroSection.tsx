@@ -14,7 +14,7 @@ export function HeroSection() {
   useEffect(() => {
     const currentSubtitle = translations.hero.subtitles[currentSubtitleIndex];
     const typingSpeed = 100;
-    const deletingSpeed = 50;
+    const deletingSpeed = 20;
     const pauseTime = 3000;
 
     if (!isDeleting && displayText === currentSubtitle) {
@@ -41,11 +41,11 @@ export function HeroSection() {
 
   return (
     <section id="home" className="flex justify-center container px-4 h-screen">
-      <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
-        <div className="flex justify-center md:order-last">
+      <div className="flex flex-col md:flex-row items-center gap-16 mt-16 md:mt-0">
+        <div className="flex justify-center md:order-last md:w-[400px]">
           <div className="relative h-[400px] w-[400px] rounded-full bg-gradient-to-b from-primary/50 to-primary overflow-hidden">
             <Image
-              src="/profile-picture.jpg"
+              src="https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0sYIv6atQWdu3AfYeK5R1aUyJ6xsGmPzq7hjI4"
               alt="Profile picture"
               fill
               className="object-cover"
@@ -54,14 +54,14 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-2">
           <h1 className="text-4xl font-bold">{translations.hero.title}</h1>
           <p className="text-2xl font-semibold text-primary relative">
             {displayText}
             <span className="animate-blink ml-1">|</span>
           </p>
-          <p className="text-muted-foreground">{translations.hero.description}</p>
-          <div>
+          <p className="text-muted-foreground mt-4">{translations.hero.description}</p>
+          <div className="mt-8">
             <Button size="lg" asChild>
               <a href="/cv.pdf" download>{translations.hero.downloadCV}</a>
             </Button>
