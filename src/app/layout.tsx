@@ -4,7 +4,7 @@ import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Alexandre de Paiva Almeida | Portfolio",
+  title: "Alxpv | Portfolio",
   description: "Full Stack Developer Portfolio",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };

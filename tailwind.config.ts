@@ -8,7 +8,7 @@ export default {
   	extend: {
   		fontFamily: {
   			sans: [
-  				'var(--font-geist-sans)',
+  				'Montserrat',
                     ...fontFamily.sans
                 ]
   		},
