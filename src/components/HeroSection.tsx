@@ -6,7 +6,7 @@ import { useLanguage } from "~/contexts/LanguageContext";
 import { useEffect, useState } from "react";
 
 export function HeroSection() {
-  const { translations } = useLanguage();
+  const { translations, language } = useLanguage();
   const [currentSubtitleIndex, setCurrentSubtitleIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -63,7 +63,7 @@ export function HeroSection() {
           <p className="text-muted-foreground mt-4">{translations.hero.description}</p>
           <div className="mt-8">
             <Button size="lg" asChild>
-              <a href="/cv.pdf" download>{translations.hero.downloadCV}</a>
+              <a href={`/cv-${language}.pdf`} download={`cv-${language}.pdf`}>{translations.hero.downloadCV}</a>
             </Button>
           </div>
         </div>

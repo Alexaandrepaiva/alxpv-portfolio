@@ -17,7 +17,7 @@ export function SocialMediaButton({ href, icon: Icon, label }: SocialMediaButton
     >
       <Link href={href} target="_blank" className="flex items-center justify-start">
         <Icon className="h-5 w-5" />
-        <span className="ml-2">{label}</span>
+        <span>{label}</span>
       </Link>
     </Button>
   );
