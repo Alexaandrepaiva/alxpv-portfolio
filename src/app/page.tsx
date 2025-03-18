@@ -2,6 +2,7 @@ import { Navbar } from "~/components/Navbar";
 import { HeroSection } from "~/components/HeroSection";
 import { Footer } from "~/components/Footer";
 import { ExperienceSection } from "~/components/ExperienceSection";
+import { EducationSection } from "~/components/EducationSection";
 
 export default function HomePage() {
 
@@ -14,7 +15,7 @@ export default function HomePage() {
           <ExperienceSection />
         </section>
         <section id="education" className="container py-24 sm:py-32">
-          {/* Education section content will be added later */}
+          <EducationSection />
         </section>
         <section id="projects" className="container py-24 sm:py-32">
           {/* Projects section content will be added later */}
