@@ -92,10 +92,30 @@ export const es = {
       title: "Educación",
       items: [
         {
-          degree: "Ciencias de la Computación",
-          institution: "Universidad de Tecnología",
-          period: "2016 - 2020",
-          description: "Licenciatura con enfoque en ingeniería de software"
+          degree: "Licenciatura en Ingeniería Informática",
+          institution: "Instituto Militar de Engenharia (IME)",
+          period: "2021 - 2025",
+          description: [
+            "Institución pública de ingeniería mejor clasificada de Brasil según ENADE",
+            "El plan de estudios incluyó: Algoritmos Avanzados, Álgebra Lineal, Métodos Numéricos, Cálculo, Probabilidad y Estadística, Fundamentos de Aprendizaje Automático"
+          ]
+        },
+        {
+          degree: "Bachillerato Internacional",
+          institution: "Marian Academy (Guyana)",
+          period: "2016 - 2018",
+          description: [
+            "Completó la escuela secundaria en el extranjero con enfoque en matemáticas, ciencias y física",
+            "Complementó la graduación con exámenes CAPE, obteniendo la puntuación más alta en Matemáticas Aplicadas, Estadística y Física"
+          ]
+        },
+        {
+          degree: "Bachillerato Nacional",
+          institution: "Colégio Militar de Manaus",
+          period: "2016 - 2018",
+          description: [
+            "Mientras vivía en el extranjero, logró graduarse de la escuela secundaria a distancia en Brasil"
+          ]
         }
       ]
     },

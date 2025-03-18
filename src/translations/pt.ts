@@ -92,10 +92,30 @@ export const pt = {
       title: "Educação",
       items: [
         {
-          degree: "Ciência da Computação",
-          institution: "Universidade de Tecnologia",
-          period: "2016 - 2020",
-          description: "Bacharelado com foco em engenharia de software"
+          degree: "Bacharelado em Engenharia da Computação",
+          institution: "Instituto Militar de Engenharia (IME)",
+          period: "2021 - 2025",
+          description: [
+            "Instituição pública de engenharia mais bem classificada do Brasil de acordo com o ENADE",
+            "Currículo incluiu: Algoritmos Avançados, Álgebra Linear, Métodos Numéricos, Cálculo, Probabilidade e Estatística, Fundamentos de Aprendizado de Máquina"
+          ]
+        },
+        {
+          degree: "Ensino Médio Internacional",
+          institution: "Marian Academy (Guiana)",
+          period: "2016 - 2018",
+          description: [
+            "Completou o ensino médio no exterior com foco em matemática, ciências e física",
+            "Complementou a graduação com exames CAPE, obtendo a maior pontuação em Matemática Aplicada, Estatística e Física"
+          ]
+        },
+        {
+          degree: "Ensino Médio Nacional",
+          institution: "Colégio Militar de Manaus",
+          period: "2016 - 2018",
+          description: [
+            "Enquanto morava no exterior, conseguiu se formar no ensino médio remotamente no Brasil"
+          ]
         }
       ]
     },

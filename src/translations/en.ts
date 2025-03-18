@@ -92,10 +92,30 @@ export const en = {
       title: "Education",
       items: [
         {
-          degree: "Computer Science",
-          institution: "University of Technology",
-          period: "2016 - 2020",
-          description: "Bachelor's degree with focus on software engineering"
+          degree: "Bachelor in Computer Engineering",
+          institution: "Instituto Militar de Engenharia (IME)",
+          period: "2021 - 2025",
+          description: [
+            "Brazil's highest-ranked public engineering institution according to ENADE",
+            "Coursework included: Advanced Algorithms, Linear Algebra, Numerical Methods, Calculus, Probability & Statistics, Machine Learning Fundamentals"
+          ]
+        },
+        {
+          degree: "International High School",
+          institution: "Marian Academy (Guyana)",
+          period: "2016 - 2018",
+          description: [
+            "Complete high school abroad focusing in math, science and physics subjects",
+            "Complemented the graduation with CAPE exams, getting highest score in Applied Mathematics, Statistics and Physics"
+          ]
+        },
+        {
+          degree: "National High School",
+          institution: "Colégio Militar de Manaus",
+          period: "2016 - 2018",
+          description: [
+            "While living abroad still managed to graduate at high school remotely in Brazil"
+          ]
         }
       ]
     },

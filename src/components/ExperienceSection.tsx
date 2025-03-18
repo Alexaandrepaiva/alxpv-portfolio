@@ -12,7 +12,7 @@ export function ExperienceSection() {
         {translations.sections.experience.title}
       </h2>
 
-      <div className="relative space-y-8">
+      <div className="relative space-y-20">
         {/* Timeline line */}
         <div className="absolute left-[5px] top-0 w-px h-full bg-black"></div>
         {translations.sections.experience.items.map((job, index) => (
