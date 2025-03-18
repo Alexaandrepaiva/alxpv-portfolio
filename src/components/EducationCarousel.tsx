@@ -11,7 +11,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "~/components/ui/carousel";
-import type { CarouselOptions } from "embla-carousel-react";
+import type { CarouselOptions } from "~/components/ui/carousel";
 
 export default function EducationCarousel() {
   const { translations } = useLanguage();
