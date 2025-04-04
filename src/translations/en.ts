@@ -24,7 +24,13 @@ export const en = {
   social: {
     linkedin: "LinkedIn",
     github: "GitHub",
-    twitter: "X"
+    twitter: "X",
+    descriptions: {
+      email: "Send your best job offer",
+      linkedin: "Certifications, projects, and professional network",
+      github: "Code activities and personal projects repositories",
+      twitter: "Tech and Finance inspirations"
+    }
   },
   sections: {
     experience: {

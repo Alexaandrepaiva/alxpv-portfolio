@@ -45,7 +45,7 @@ export function HeroSection() {
         <div className="flex justify-center md:order-last md:w-[400px]">
           <div className="relative h-[400px] w-[400px] rounded-full bg-gradient-to-b from-primary/50 to-primary overflow-hidden">
             <Image
-              src="https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0sYIv6atQWdu3AfYeK5R1aUyJ6xsGmPzq7hjI4"
+              src="https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0saLwAL4H2rOcYxT5KERhf7DSjJdAngwm0eWpl"
               alt="Profile picture"
               fill
               className="object-cover"
