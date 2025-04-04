@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <main className="flex flex-col items-center min-h-screen w-full">
       <Navbar />
-      <div className="w-full px-4 sm:px-6 md:px-8 max-w-full md:max-w-6xl">
+      <div className="w-full px-4 sm:px-6 md:px-8 max-w-full md:max-w-5xl mx-auto">
         <HeroSection />
         <section id="experience" className="py-16 sm:py-24 mt-8 md:mt-0">
           <ExperienceSection />
