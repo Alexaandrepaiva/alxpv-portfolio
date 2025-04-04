@@ -17,7 +17,17 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable} light`}>
+    <html lang="en" className={GeistSans.variable}>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function() {
+              const theme = localStorage.getItem('theme') || 'light';
+              document.documentElement.classList.add(theme);
+            })();
+          `,
+        }}
+      />
       <body>
         <ThemeProvider>
           <LanguageProvider>{children}</LanguageProvider>
