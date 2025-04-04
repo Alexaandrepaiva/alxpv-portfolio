@@ -105,8 +105,8 @@ export function ContactSection() {
           </div>
         </div>
 
-        {/* Right Column - Contact Form */}
-        <div className="space-y-6 order-2">
+        {/* Right Column - Contact Form - hidden on mobile */}
+        <div className="space-y-6 order-2 hidden md:block">
           <h3 className="text-xl font-semibold">
             {language === 'en' ? 'Contact Me' : language === 'es' ? 'Formulario de Contacto' : 'Formulário de Contato'}
           </h3>

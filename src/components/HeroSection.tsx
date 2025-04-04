@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Button } from "~/components/ui/button";
 import { useLanguage } from "~/contexts/LanguageContext";
 import { useEffect, useState } from "react";
+import { ScrollChevron } from "~/components/ScrollChevron";
 
 export function HeroSection() {
   const { translations, language } = useLanguage();
@@ -40,10 +41,10 @@ export function HeroSection() {
   }, [displayText, currentSubtitleIndex, isDeleting, translations.hero.subtitles]);
 
   return (
-    <section id="home" className="flex justify-center container px-4 h-screen">
-      <div className="flex flex-col md:flex-row items-center gap-16 mt-16 md:mt-0">
+    <section id="home" className="flex justify-center px-4 min-h-screen py-8 md:py-0 relative">
+      <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 mt-8 md:mt-0">
         <div className="flex justify-center md:order-last md:w-[400px]">
-          <div className="relative h-[400px] w-[400px] rounded-full bg-gradient-to-b from-primary/50 to-primary overflow-hidden">
+          <div className="relative h-[260px] w-[260px] md:h-[400px] md:w-[400px] rounded-full bg-gradient-to-b from-primary/50 to-primary overflow-hidden">
             <Image
               src="https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0saLwAL4H2rOcYxT5KERhf7DSjJdAngwm0eWpl"
               alt="Profile picture"
@@ -54,9 +55,9 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-2">
-          <h1 className="text-4xl font-bold">{translations.hero.title}</h1>
-          <p className="text-2xl font-semibold text-primary relative">
+        <div className="flex flex-col gap-2 text-center md:text-left">
+          <h1 className="text-3xl md:text-4xl font-bold">{translations.hero.title}</h1>
+          <p className="text-xl md:text-2xl font-semibold text-primary relative">
             {displayText}
             <span className="animate-blink ml-1">|</span>
           </p>
@@ -68,6 +69,9 @@ export function HeroSection() {
           </div>
         </div>
       </div>
+      
+      {/* Bouncing chevron to encourage scrolling */}
+      <ScrollChevron />
     </section>
   );
 }

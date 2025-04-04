@@ -10,21 +10,21 @@ export default function HomePage() {
   return (
     <main className="flex flex-col items-center min-h-screen w-full">
       <Navbar />
-      <div className="max-w-6xl">
+      <div className="w-full px-4 sm:px-6 md:px-8 max-w-full md:max-w-5xl mx-auto">
         <HeroSection />
-        <section id="experience" className="container py-24 sm:py-32">
+        <section id="experience" className="py-16 sm:py-24 mt-8 md:mt-0">
           <ExperienceSection />
         </section>
-        <section id="education" className="container py-24 sm:py-32">
+        <section id="education" className="py-16 sm:py-24 mt-8 md:mt-0">
           <EducationSection />
         </section>
-        <section id="projects" className="container py-24 sm:py-32">
+        <section id="projects" className="py-16 sm:py-24 mt-8 md:mt-0">
           {/* Projects section content will be added later */}
         </section>
-        <section id="skills" className="container py-24 sm:py-32">
+        <section id="skills" className="py-16 sm:py-24 mt-8 md:mt-0">
           {/* Skills section content will be added later */}
         </section>
-        <section id="contact" className="container py-24 sm:py-32">
+        <section id="contact" className="py-16 sm:py-24 mt-8 md:mt-0">
           <ContactSection />
         </section>
       </div>

@@ -20,7 +20,7 @@ export function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <nav className="md:fixed relative top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="mx-auto max-w-[90rem] px-4">
         <div className="flex h-14 items-center justify-between">
           <div className="flex items-center">
@@ -29,7 +29,7 @@ export function Navbar() {
             </Link>
           </div>
 
-          <NavigationMenu className="flex-1 flex justify-center">
+          <NavigationMenu className="hidden md:flex md:flex-1 md:justify-center">
             <NavigationMenuList>
               {sections.map((section) => (
                 <NavigationMenuItem key={section}>
@@ -45,7 +45,9 @@ export function Navbar() {
           </NavigationMenu>
 
           <div className="flex space-between gap-4">
-            <SocialMediaButtonsGroup />
+            <div className="hidden md:block">
+              <SocialMediaButtonsGroup />
+            </div>
 
             <LanguageSelector />
           </div>

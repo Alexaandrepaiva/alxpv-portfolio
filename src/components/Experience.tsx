@@ -23,13 +23,15 @@ export function Experience({
   description,
   avatar,
 }: ExperienceProps) {
+  const dateLabel = `${startDate} - ${endDate || "Present"}`;
+
   return (
-    <div className="relative pl-8 group">
-      {/* Timeline dot */}
-      <div className="absolute top-1 left-0 w-3 h-3 bg-primary rounded-full z-10"></div>
-      {/* Date label */}
-      <div className="absolute left-6 text-black">
-        {startDate} - {endDate || "Present"}
+    <div className="relative pl-0 md:pl-8 group mb-8">
+      {/* Timeline dot - hidden on mobile */}
+      <div className="absolute top-1 left-0 w-3 h-3 bg-primary rounded-full z-10 hidden md:block"></div>
+      {/* Date label - visible only on desktop */}
+      <div className="absolute left-6 text-black hidden md:block">
+        {dateLabel}
       </div>
 
       <div className="pt-2">
@@ -42,7 +44,7 @@ export function Experience({
                   <img
                     src={avatar}
                     alt={`${companyName} logo`}
-                    className="w-16 h-16 object-contain"
+                    className="w-16 h-16 object-contain hidden md:block"
                   />
                 )}
                 <div className="flex-1 space-y-4">
@@ -52,6 +54,12 @@ export function Experience({
                       <Building2 className="w-4 h-4" />
                       {companyName}
                     </span>
+                  </div>
+
+                  {/* Date label - visible only on mobile */}
+                  <div className="flex items-center gap-1 text-sm text-muted-foreground md:hidden">
+                    <CalendarRange className="w-4 h-4" />
+                    {dateLabel}
                   </div>
 
                   <div className="flex flex-wrap gap-2">
