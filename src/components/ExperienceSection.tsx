@@ -8,13 +8,13 @@ export function ExperienceSection() {
 
   return (
     <div className="space-y-8">
-      <h2 className="text-3xl font-bold text-center mb-12">
+      <h2 className="text-3xl font-bold text-center mb-8 md:mb-12">
         {translations.sections.experience.title}
       </h2>
 
-      <div className="relative space-y-20">
+      <div className="relative space-y-8 md:space-y-20">
         {/* Timeline line */}
-        <div className="absolute left-[5px] top-0 w-px h-full bg-black"></div>
+        <div className="absolute left-[5px] top-0 w-px h-full bg-black hidden md:block"></div>
         {translations.sections.experience.items.map((job, index) => (
           <Experience
             key={index}
