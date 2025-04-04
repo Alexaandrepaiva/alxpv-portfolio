@@ -10,6 +10,11 @@ export const es = {
     skills: "Habilidades",
     contact: "Contacto"
   },
+  theme: {
+    toggle: "Cambiar tema",
+    dark: "Tema oscuro",
+    light: "Tema claro"
+  },
   hero: {
     title: "Alexandre Paiva",
     subtitles: ["Ingeniero en Computación", "Desarrollador Fullstack", "Gerente de Producto", "Entusiasta de la Inteligencia Artificial"],
@@ -37,15 +42,45 @@ export const es = {
       title: "Experiencia",
       items: [
         {
-          title: "Gerente de Producto y Desarrollador Fullstack Junior",
+          title: "Gerente de Producto Asociado y Desarrollador Fullstack Junior",
           company: "TutorMundi",
           startDate: "Abril 2023",
           avatar: "https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0sSFbMdz5tygmu5LxzRTcYHJ8abUeBPofQ0iWd",
           skills: ["Meteor.js", "Node.js", "MongoDB", "NoSQL", "Figma", "Analytics"],
           description: [
-            "Dirigí el ciclo de vida completo del producto, desde el descubrimiento hasta el lanzamiento, incluyendo planificación de funciones, desarrollo de especificaciones técnicas y de producto, creación de estrategia de lanzamiento, y validación de rendimiento post-lanzamiento y pruebas de usabilidad",
-            "Progresé de pasante a desarrollador a tiempo completo. Desarrollé características críticas de la plataforma, incluyendo sistemas de respuesta automatizada con IA, funcionalidad de voz para sesiones de tutoría en vivo y una solución personalizada de pizarra digital",
-            "Mentoré a desarrolladores junior, resolví errores de producción, mantuve la calidad del código, actualicé versiones de bibliotecas y analicé el rendimiento de las funciones a través de análisis de la plataforma"
+            "Dirigí el ciclo de vida completo del producto desde el descubrimiento hasta el lanzamiento, incluyendo la planificación de características, desarrollo de especificaciones técnicas y de producto, creación de estrategia de lanzamiento, y validación de rendimiento post-lanzamiento y pruebas de usabilidad",
+            "Progresé de pasantía a desarrollador a tiempo completo. Diseñé características críticas de la plataforma, incluyendo sistemas de respuesta automática impulsados por IA, funcionalidad de voz para sesiones de tutoría en vivo, y una solución de pizarra digital personalizada",
+            "Mentoré a desarrolladores junior, resolví errores de producción, mantuve la calidad del código, actualicé versiones de bibliotecas y analicé el rendimiento de las características a través de análisis de plataforma"
+          ]
+        },
+        {
+          title: "Pasante de Ingeniería de Simulación",
+          company: "CIAvEx",
+          startDate: "Agosto 2024",
+          endDate: "Diciembre 2024",
+          avatar: "https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0sA4ntYPXuhnVZQSP9fXUmRcINExdzHCwjDoY2",
+          skills: ["Python", "Simulador"],
+          description: [
+            "Desarrollé un simulador de escritorio basado en Python para equipos de radionavegación y comunicación de helicópteros",
+            "Implementé modelos matemáticos para propagación de señales de radio y algoritmos de navegación",
+            "Creé una interfaz amigable que permite a los instructores crear varios escenarios de entrenamiento",
+            "Colaboré con expertos en aviación para garantizar la precisión y eficacia educativa del simulador"
+          ]
+        },
+        {
+          title: "Investigador Científico",
+          company: "LNCC",
+          startDate: "Julio 2022",
+          avatar: "https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0s1bNXWUnTEWtS2F59V4BdOAGcqnsUMp0JDZIR",
+          endDate: "Junio 2024",
+          skills: ["Python", "C++", "IA", "LLM"],
+          description: [
+            "Analicé el rendimiento de ejecución experimental de algoritmos de optimización, implementé y probé varias estrategias de optimización para mejorar la eficiencia del algoritmo, incluyendo:",
+            "Migraciones de lenguajes de programación para mejoras de rendimiento",
+            "Mejoras en métodos de almacenamiento para mejorar el rendimiento de E/S",
+            "Técnicas de paralelización para eficiencia de procesamiento multinúcleo",
+            "Estrategias de optimización de caché para computación numérica",
+            "Desarrollé y entrené un modelo de aprendizaje automático para medir y predecir automáticamente el rendimiento de ejecución de algoritmos experimentales nuevos"
           ]
         },
         {
@@ -56,40 +91,10 @@ export const es = {
           endDate: "Diciembre 2023",
           skills: ["HTML", "CSS", "JavaScript", "Tailwind", "Firebase", "Next.js", "Node.js", "SQL", "Postgres"],
           description: [
-            "Progresé de trainee a CEO a través de múltiples roles (Trainee, Miembro, Coordinador, Presidente)",
-            "Desarrollé tres proyectos principales para clientes: • Aplicación de diario personal en React Native con sistema de pago para un dentista • Plataforma Next.js para Solar21 para gestionar referencias y beneficios de referidos • Sitio de comercio electrónico para obras de arte personalizadas con sistema de pago integrado",
-            "Planifiqué, organicé y enseñé a los nuevos miembros las habilidades necesarias para convertirse en desarrolladores en el Batallón de Computación de la empresa",
-            "Serví como representante legal y administrativo, proporcionando dirección estratégica y asegurando operaciones cohesivas de la empresa, mientras lideraba la empresa para alcanzar la meta de R$100,000 en proyectos cerrados a través de una gestión eficaz del equipo y coordinación del calendario, el mayor ingreso en la historia"
-          ]
-        },
-        {
-          title: "Pasante de Ingeniería de Simulación",
-          company: "CIAvEx",
-          startDate: "Agosto 2024",
-          avatar: "https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0sA4ntYPXuhnVZQSP9fXUmRcINExdzHCwjDoY2",
-          endDate: "Diciembre 2024",
-          skills: ["Python", "Simulator"],
-          description: [
-            "Desarrollé un simulador de escritorio basado en Python para equipos de navegación por radio y comunicación de helicópteros",
-            "Implementé modelos matemáticos para la propagación de señales de radio y algoritmos de navegación",
-            "Creé una interfaz amigable que permite a los instructores crear varios escenarios de entrenamiento",
-            "Colaboré con expertos en aviación para asegurar la precisión y efectividad educativa del simulador"
-          ]
-        },
-        {
-          title: "Investigador Científico",
-          company: "LNCC",
-          startDate: "Julio 2022",
-          avatar: "https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0s1bNXWUnTEWtS2F59V4BdOAGcqnsUMp0JDZIR",
-          endDate: "Junio 2024",
-          skills: ["Python", "C++", "AI", "LLM"],
-          description: [
-            "Analicé el rendimiento en tiempo de ejecución experimental de algoritmos de optimización, implementé y probé varias estrategias de optimización para mejorar la eficiencia del algoritmo, incluyendo:",
-            "Migraciones de lenguaje de programación para mejoras de rendimiento",
-            "Mejoras en el método de almacenamiento para mejor rendimiento de E/S",
-            "Técnicas de paralelización para eficiencia de procesamiento multinúcleo",
-            "Estrategias de optimización de caché para computación numérica",
-            "Desarrollé y entrené un modelo de aprendizaje automático para medir y predecir automáticamente el rendimiento en tiempo de ejecución de nuevos algoritmos experimentales"
+            "Progresé de aprendiz a CEO a través de múltiples roles (Aprendiz, Miembro, Coordinador, Presidente)",
+            "Desarrollé tres proyectos principales para clientes: • Aplicación de diario personal React Native con sistema de pago para un dentista • Plataforma Next.js para Solar21 para gestionar referencias y beneficios de referidos • Sitio de comercio electrónico para obras de arte personalizadas con sistema de pago integrado",
+            "Planifiqué, organicé y enseñé a nuevos miembros las habilidades necesarias para convertirse en desarrolladores en el Batallón de Computación de la empresa",
+            "Serví como representante legal y administrativo, proporcionando dirección estratégica y asegurando operaciones cohesivas de la empresa mientras lideraba a la compañía para lograr el objetivo de R$100,000 en proyectos cerrados a través de la gestión efectiva del equipo y la coordinación del calendario, el ingreso más alto en la historia"
           ]
         }
       ]

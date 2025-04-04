@@ -10,6 +10,11 @@ export const en = {
     skills: "Skills",
     contact: "Contact"
   },
+  theme: {
+    toggle: "Toggle theme",
+    dark: "Dark theme",
+    light: "Light theme"
+  },
   hero: {
     title: "Alexandre Paiva",
     subtitles: ["Computer Engineer", "Fullstack Developer", "Product Manager", "Artificial Intelligence Enthusiast"],

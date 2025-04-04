@@ -30,7 +30,7 @@ export function Experience({
       {/* Timeline dot - hidden on mobile */}
       <div className="absolute top-1 left-0 w-3 h-3 bg-primary rounded-full z-10 hidden md:block"></div>
       {/* Date label - visible only on desktop */}
-      <div className="absolute left-6 text-black hidden md:block">
+      <div className="absolute left-6 text-foreground hidden md:block">
         {dateLabel}
       </div>
 

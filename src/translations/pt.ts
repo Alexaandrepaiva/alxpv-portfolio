@@ -10,6 +10,11 @@ export const pt = {
     skills: "Habilidades",
     contact: "Contato"
   },
+  theme: {
+    toggle: "Alternar tema",
+    dark: "Tema escuro",
+    light: "Tema claro"
+  },
   hero: {
     title: "Alexandre Paiva",
     subtitles: ["Engenheiro de Computação", "Desenvolvedor Fullstack", "Gerente de Produto", "Entusiasta de Inteligência Artificial"],
