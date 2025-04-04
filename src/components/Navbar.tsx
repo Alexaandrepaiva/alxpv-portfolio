@@ -2,7 +2,6 @@
 
 import { useLanguage } from "~/contexts/LanguageContext";
 import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuLink } from "~/components/ui/navigation-menu";
-import { SocialMediaButtonsGroup } from "~/components/SocialMediaButtonsGroup";
 import { LanguageSelector } from "~/components/LanguageSelector";
 import { ThemeToggle } from "~/components/ThemeToggle";
 import Link from "next/link";
@@ -46,15 +45,9 @@ export function Navbar() {
             </NavigationMenuList>
           </NavigationMenu>
 
-          <div className="flex space-between gap-4">
-            <div className="hidden md:block">
-              <SocialMediaButtonsGroup />
-            </div>
-
-            <div className="flex items-center gap-2">
-              <ThemeToggle />
-              <LanguageSelector />
-            </div>
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <LanguageSelector />
           </div>
         </div>
       </div>

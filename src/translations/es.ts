@@ -15,6 +15,10 @@ export const es = {
     dark: "Tema oscuro",
     light: "Tema claro"
   },
+  stats: {
+    yearsOfExperience: "Años de Experiencia",
+    projectsCompleted: "Proyectos Completados"
+  },
   hero: {
     title: "Alexandre Paiva",
     subtitles: ["Ingeniero en Computación", "Desarrollador Fullstack", "Gerente de Producto", "Entusiasta de la Inteligencia Artificial"],
