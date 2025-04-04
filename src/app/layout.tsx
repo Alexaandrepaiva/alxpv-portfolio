@@ -11,14 +11,27 @@ export const metadata: Metadata = {
 };
 
 import { LanguageProvider } from "~/contexts/LanguageContext";
+import { ThemeProvider } from "~/contexts/ThemeContext";
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable}`}>
+    <html lang="en" className={GeistSans.variable}>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function() {
+              const theme = localStorage.getItem('theme') || 'light';
+              document.documentElement.classList.add(theme);
+            })();
+          `,
+        }}
+      />
       <body>
-        <LanguageProvider>{children}</LanguageProvider>
+        <ThemeProvider>
+          <LanguageProvider>{children}</LanguageProvider>
+        </ThemeProvider>
         <Analytics />
       </body>
     </html>
