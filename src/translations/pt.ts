@@ -24,7 +24,13 @@ export const pt = {
   social: {
     linkedin: "LinkedIn",
     github: "GitHub",
-    twitter: "X"
+    twitter: "X",
+    descriptions: {
+      email: "Envie sua proposta de trabalho",
+      linkedin: "Certificações, projetos e rede profissional",
+      github: "Atividades de código e repositórios de projetos pessoais",
+      twitter: "Inspirações de tecnologia e finanças"
+    }
   },
   sections: {
     experience: {
