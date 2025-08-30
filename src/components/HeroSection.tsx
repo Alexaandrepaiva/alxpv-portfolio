@@ -5,9 +5,6 @@ import { Button } from "~/components/ui/button";
 import { useLanguage } from "~/contexts/LanguageContext";
 import { useEffect, useState } from "react";
 
-import { SocialMediaIcons } from "~/components/SocialMediaIcons";
-import { HeroStats } from "~/components/HeroStats";
-
 export function HeroSection() {
   const { translations, language } = useLanguage();
   const [currentSubtitleIndex, setCurrentSubtitleIndex] = useState(0);
@@ -51,7 +48,7 @@ export function HeroSection() {
   return (
     <section id="home" className="w-full">
       <div className="flex flex-col items-start text-left max-w-4xl mx-auto w-full">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4">{translations.hero.title}</h1>
+        <h1 className="text-3xl md:text-5xl font-bold mb-4">{translations.hero.title}</h1>
         <p className="text-xl md:text-2xl font-semibold text-primary relative mb-6">
           {mounted ? displayText : translations.hero.subtitles[0]}
           <span className="animate-blink ml-1">|</span>
@@ -75,13 +72,9 @@ export function HeroSection() {
           })}
         </p>
         
-        <HeroStats />
-        
-        <div className="mt-8">
-          <Button size="lg" asChild>
-            <a href={`/cv-${language}.pdf`} download={`cv-${language}.pdf`}>{translations.hero.downloadCV}</a>
-          </Button>
-        </div>
+        <Button size="lg" asChild>
+          <a href={`/cv-${language}.pdf`} download={`cv-${language}.pdf`}>{translations.hero.downloadCV}</a>
+        </Button>
       </div>
     </section>
   );

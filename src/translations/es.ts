@@ -22,7 +22,7 @@ export const es = {
   },
   hero: {
     title: "Alexandre Paiva",
-    subtitles: ["Ingeniero en Computación", "Desarrollador Fullstack", "Gerente de Producto", "Entusiasta de la Inteligencia Artificial"],
+    subtitles: ["Ingeniero en Computación", "Gerente de Producto", "Desarrollador de Software", "Entusiasta de la Inteligencia Artificial", "Jugador de Tenis", "Aspirante a Sommelier"],
     description: "Gerente de Producto en TutorMundi",
     downloadCV: "Descargar CV"
   },
@@ -165,9 +165,8 @@ export const es = {
     subtitle: "Convirtiendo visión en realidad",
     paragraphs: [
       "Profesional en Ingeniería de Computación especializado en transformar visión estratégica en productos tecnológicos escalables que entregan impacto medible.",
-      "Lideré desarrollo end-to-end de funcionalidades de alto impacto incluyendo sistemas de tutoría por voz en vivo y plataformas con IA y capacidades de OCR en empresa edTech, transformando exitosamente conceptos ambiciosos en soluciones listas para producción.",
+      "Planeé y desarrollé funcionalidades de alto impacto incluyendo sistemas de tutoría por voz en vivo y plataformas con IA y capacidades de OCR en empresa edTech, transformando exitosamente conceptos ambiciosos en soluciones listas para producción.",
       "Mi experiencia abarca gestión de productos y desarrollo full-stack, permitiéndome conectar visión estratégica con ejecución técnica a través de análisis de datos, investigación de usuarios y tecnologías web modernas (React, Node.js, Next.js, integración con IA).",
-      "Habiendo entregado proyectos diversos en múltiples industrias—desde estimación de costos de construcción hasta plataformas de programación médica—combino competencia técnica, intuición de producto y experiencia en liderazgo para transformar consistentemente objetivos de negocio en productos escalables que sirven a clientes reales."
     ]
   }
 }
