@@ -22,12 +22,26 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   // Initialize theme from localStorage and set mounted state
   useEffect(() => {
-    // Only access localStorage after component has mounted on client
     setMounted(true);
-    const savedTheme = localStorage.getItem("theme") as Theme | null;
-    if (savedTheme) {
-      setTheme(savedTheme);
+    
+    // Get theme from localStorage or default to light
+    let initialTheme: Theme = "light";
+    try {
+      const savedTheme = localStorage.getItem("theme") as Theme | null;
+      if (savedTheme && (savedTheme === "dark" || savedTheme === "light")) {
+        initialTheme = savedTheme;
+      }
+    } catch (error) {
+      // Fallback to light theme if localStorage is not available
+      console.warn("Could not access localStorage for theme preference");
     }
+    
+    setTheme(initialTheme);
+    
+    // Apply initial theme to avoid flash
+    const root = window.document.documentElement;
+    root.classList.remove("dark", "light");
+    root.classList.add(initialTheme);
   }, []);
 
   // Update document class and localStorage when theme changes
@@ -38,7 +52,11 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     root.classList.remove("dark", "light");
     root.classList.add(theme);
     
-    localStorage.setItem("theme", theme);
+    try {
+      localStorage.setItem("theme", theme);
+    } catch (error) {
+      console.warn("Could not save theme preference to localStorage");
+    }
   }, [theme, mounted]);
 
   const value = {

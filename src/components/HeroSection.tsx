@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Button } from "~/components/ui/button";
 import { useLanguage } from "~/contexts/LanguageContext";
 import { useEffect, useState } from "react";
-import { ScrollChevron } from "~/components/ScrollChevron";
+
 import { SocialMediaIcons } from "~/components/SocialMediaIcons";
 import { HeroStats } from "~/components/HeroStats";
 
@@ -43,8 +43,8 @@ export function HeroSection() {
   }, [displayText, currentSubtitleIndex, isDeleting, translations.hero.subtitles]);
 
   return (
-    <section id="home" className="flex justify-center px-4 min-h-screen py-8 md:py-0 relative">
-      <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 mt-8 md:mt-0">
+    <section id="home" className="flex justify-center items-center px-4 min-h-[calc(100vh-6.5rem)] md:h-full py-8 md:py-0 relative">
+      <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
         <div className="flex flex-col items-center lg:order-first">
           <div className="relative h-[280px] w-[280px] md:h-[400px] md:w-[400px] rounded-full bg-gradient-to-b from-primary/50 to-primary overflow-hidden">
             <Image
@@ -75,9 +75,6 @@ export function HeroSection() {
           </div>
         </div>
       </div>
-      
-      {/* Bouncing chevron to encourage scrolling */}
-      <ScrollChevron />
     </section>
   );
 }
