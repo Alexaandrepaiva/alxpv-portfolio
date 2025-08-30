@@ -49,7 +49,7 @@ export const en = {
         {
           role: "Associate Product Manager",
           company: "TutorMundi",
-          startDate: "abr de 2024",
+          startDate: "Apr 2024",
           endDate: "present",
           duration: "1 year 5 months",
           summary: "Responsible for translating company strategy into an actionable product roadmap, managing the end-to-end lifecycle of new features from concept and planning to launch and performance analysis. I crafted detailed product specifications to guide design and engineering teams and continuously monitored platform KPIs, including engagement, satisfaction, and feature adoption."
