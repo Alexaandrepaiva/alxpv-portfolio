@@ -8,7 +8,7 @@ export const en = {
     experience: "Experience",
     education: "Education",
     projects: "Projects",
-    skills: "Skills",
+
     contact: "Contact"
   },
   theme: {
@@ -22,7 +22,7 @@ export const en = {
   },
   hero: {
     title: "Alexandre Paiva",
-    subtitles: ["Computer Engineer", "Product Manager", "Software Developer", "Artificial Intelligence Enthusiast", "Tennis Player", "Aspiring Sommelier"],
+    subtitles: ["Engineering Vision into Reality", "Computer Engineer", "Product Manager", "Software Developer", "Artificial Intelligence Enthusiast", "Tennis Player", "Aspiring Sommelier"],
     description: "Product Manager at TutorMundi",
     downloadCV: "Download CV"
   },
@@ -44,7 +44,7 @@ export const en = {
   },
   sections: {
     experience: {
-      title: "Experience",
+      title: "Built Through Doing",
       items: [
         {
           role: "Associate Product Manager",
@@ -105,38 +105,36 @@ export const en = {
       ]
     },
     education: {
-      title: "Education",
+      title: "Academic Footprints",
       items: [
         {
           degree: "Bachelor in Computer Engineering",
           institution: "Instituto Militar de Engenharia (IME)",
-          period: "2021 - 2025",
-          description: [
-            "Brazil's highest-ranked public engineering institution according to ENADE",
-            "Coursework included: Advanced Algorithms, Linear Algebra, Numerical Methods, Calculus, Probability & Statistics, Machine Learning Fundamentals"
-          ]
+          startDate: "2021",
+          endDate: "2025",
+          duration: "5 years",
+          summary: "Brazil's highest-ranked public engineering institution according to ENADE. Coursework included: Advanced Algorithms, Linear Algebra, Numerical Methods, Calculus, Probability & Statistics, Machine Learning Fundamentals."
         },
         {
           degree: "International High School",
           institution: "Marian Academy (Guyana)",
-          period: "2016 - 2018",
-          description: [
-            "Complete high school abroad focusing in math, science and physics subjects",
-            "Complemented the graduation with CAPE exams, getting highest score in Applied Mathematics, Statistics and Physics"
-          ]
+          startDate: "2016",
+          endDate: "2018",
+          duration: "3 years",
+          summary: "Complete high school abroad focusing in math, science and physics subjects. Complemented the graduation with CAPE exams, getting highest score in Applied Mathematics, Statistics and Physics."
         },
         {
           degree: "National High School",
           institution: "Colégio Militar de Manaus",
-          period: "2016 - 2018",
-          description: [
-            "While living abroad still managed to graduate at high school remotely in Brazil"
-          ]
+          startDate: "2016",
+          endDate: "2018",
+          duration: "3 years",
+          summary: "While living abroad still managed to graduate at high school remotely in Brazil."
         }
       ]
     },
     projects: {
-      title: "Projects",
+      title: "Built & Shipped",
       items: [
         {
           name: "Project Alpha",
@@ -145,24 +143,16 @@ export const en = {
         }
       ]
     },
-    skills: {
-      title: "Skills",
-      categories: {
-        frontend: "Frontend",
-        backend: "Backend",
-        tools: "Tools"
-      }
-    },
+
     contact: {
-      title: "Contact",
+      title: "Reach Out",
       email: "Email",
       message: "Message",
       send: "Send Message"
     }
   },
   about: {
-    title: "Alexandre Paiva",
-    subtitle: "ENGINEERING VISION INTO REALITY",
+    title: "Who am I?",
     paragraphs: [
       "Computer Engineering professional specialized in transforming strategic vision into scalable tech products that deliver measurable impact.",
       "Planned and developed high-impact features including live voice tutoring systems and AI-powered platforms with OCR capabilities at an edTech company, successfully turning ambitious concepts into production-ready solutions.",

@@ -1,6 +1,6 @@
 "use client";
 
-import EducationCarousel from "~/components/EducationCarousel";
+import { Education } from "~/components/Education";
 import { useLanguage } from "~/contexts/LanguageContext";
 
 export function EducationSection() {
@@ -8,10 +8,11 @@ export function EducationSection() {
 
   return (
     <div className="space-y-8">
-      <h2 className="text-3xl font-bold text-center mb-12">
+      <h2 className="text-3xl font-bold text-center mb-8 md:mb-12">
         {translations.sections.education.title}
       </h2>
-      <EducationCarousel />
+
+      <Education />
     </div>
   );
 }

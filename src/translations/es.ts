@@ -8,7 +8,7 @@ export const es = {
     experience: "Experiencia",
     education: "Educación",
     projects: "Proyectos",
-    skills: "Habilidades",
+
     contact: "Contacto"
   },
   theme: {
@@ -22,7 +22,7 @@ export const es = {
   },
   hero: {
     title: "Alexandre Paiva",
-    subtitles: ["Ingeniero en Computación", "Gerente de Producto", "Desarrollador de Software", "Entusiasta de la Inteligencia Artificial", "Jugador de Tenis", "Aspirante a Sommelier"],
+    subtitles: ["Convirtiendo Visión en Realidad", "Ingeniero en Computación", "Gerente de Producto", "Desarrollador de Software", "Entusiasta de la Inteligencia Artificial", "Jugador de Tenis", "Aspirante a Sommelier"],
     description: "Gerente de Producto en TutorMundi",
     downloadCV: "Descargar CV"
   },
@@ -44,7 +44,7 @@ export const es = {
   },
   sections: {
     experience: {
-      title: "Experiencia",
+      title: "Hitos de Carrera",
       items: [
         {
           role: "Gerente de Producto Asociado",
@@ -105,38 +105,36 @@ export const es = {
       ]
     },
     education: {
-      title: "Educación",
+      title: "Pistas Académicas",
       items: [
         {
           degree: "Licenciatura en Ingeniería Informática",
           institution: "Instituto Militar de Engenharia (IME)",
-          period: "2021 - 2025",
-          description: [
-            "Institución pública de ingeniería mejor clasificada de Brasil según ENADE",
-            "El plan de estudios incluyó: Algoritmos Avanzados, Álgebra Lineal, Métodos Numéricos, Cálculo, Probabilidad y Estadística, Fundamentos de Aprendizaje Automático"
-          ]
+          startDate: "2021",
+          endDate: "2025",
+          duration: "5 años",
+          summary: "Institución pública de ingeniería mejor clasificada de Brasil según ENADE. El plan de estudios incluyó: Algoritmos Avanzados, Álgebra Lineal, Métodos Numéricos, Cálculo, Probabilidad y Estadística, Fundamentos de Aprendizaje Automático."
         },
         {
           degree: "Bachillerato Internacional",
           institution: "Marian Academy (Guyana)",
-          period: "2016 - 2018",
-          description: [
-            "Completó la escuela secundaria en el extranjero con enfoque en matemáticas, ciencias y física",
-            "Complementó la graduación con exámenes CAPE, obteniendo la puntuación más alta en Matemáticas Aplicadas, Estadística y Física"
-          ]
+          startDate: "2016",
+          endDate: "2018",
+          duration: "3 años",
+          summary: "Completó la escuela secundaria en el extranjero con enfoque en matemáticas, ciencias y física. Complementó la graduación con exámenes CAPE, obteniendo la puntuación más alta en Matemáticas Aplicadas, Estadística y Física."
         },
         {
           degree: "Bachillerato Nacional",
           institution: "Colégio Militar de Manaus",
-          period: "2016 - 2018",
-          description: [
-            "Mientras vivía en el extranjero, logró graduarse de la escuela secundaria a distancia en Brasil"
-          ]
+          startDate: "2016",
+          endDate: "2018",
+          duration: "3 años",
+          summary: "Mientras vivía en el extranjero, logró graduarse de la escuela secundaria a distancia en Brasil."
         }
       ]
     },
     projects: {
-      title: "Proyectos",
+      title: "Desarrollados y Entregados",
       items: [
         {
           name: "Proyecto Alpha",
@@ -145,24 +143,16 @@ export const es = {
         }
       ]
     },
-    skills: {
-      title: "Habilidades",
-      categories: {
-        frontend: "Frontend",
-        backend: "Backend",
-        tools: "Herramientas"
-      }
-    },
+
     contact: {
-      title: "Contacto",
+      title: "Contáctame",
       email: "Correo",
       message: "Mensaje",
       send: "Enviar Mensaje"
     }
   },
   about: {
-    title: "Alexandre Paiva",
-    subtitle: "Convirtiendo visión en realidad",
+    title: "Quién soy?",
     paragraphs: [
       "Profesional en Ingeniería de Computación especializado en transformar visión estratégica en productos tecnológicos escalables que entregan impacto medible.",
       "Planeé y desarrollé funcionalidades de alto impacto incluyendo sistemas de tutoría por voz en vivo y plataformas con IA y capacidades de OCR en empresa edTech, transformando exitosamente conceptos ambiciosos en soluciones listas para producción.",

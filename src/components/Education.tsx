@@ -1,46 +1,43 @@
 "use client";
 
-import { Card, CardContent } from "~/components/ui/card";
-import { GraduationCap, Building2, CalendarRange } from "lucide-react";
+import { useLanguage } from "~/contexts/LanguageContext";
 
-interface EducationProps {
-  degree: string;
-  institution: string;
-  period: string;
-  description: string[];
-}
+export function Education() {
+  const { translations } = useLanguage();
+  const educationItems = translations.sections.education.items;
 
-export function Education({
-  degree,
-  institution,
-  period,
-  description,
-}: EducationProps) {
   return (
-    <Card className="h-full">
-      <CardContent className="pt-6">
-        <div className="space-y-4">
-          <div className="flex flex-col space-y-2">
-            <div className="flex items-center gap-2">
-              <GraduationCap className="w-5 h-5 text-primary" />
-              <h3 className="text-xl font-semibold">{degree}</h3>
+    <div className="w-full max-w-4xl mx-auto px-4 py-8">
+      <div className="space-y-12">
+        {educationItems.map((education, index) => (
+          <div key={index} className="text-left space-y-3">
+            {/* Degree Title */}
+            <h3 className="text-2xl font-bold text-foreground leading-tight">
+              {education.degree}
+            </h3>
+            
+            {/* Institution Name */}
+            <h4 className="text-xl font-semibold text-muted-foreground">
+              {education.institution}
+            </h4>
+            
+            {/* Date and Duration */}
+            <div className="flex flex-col sm:flex-row sm:items-center sm:gap-4 text-sm text-muted-foreground">
+              <span className="font-medium">
+                {education.startDate} - {education.endDate}
+              </span>
+              <span className="italic">
+                {education.duration}
+              </span>
             </div>
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <Building2 className="w-4 h-4" />
-              <span>{institution}</span>
-            </div>
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <CalendarRange className="w-4 h-4" />
-              <span>{period}</span>
-            </div>
+            
+            {/* Summary */}
+            <p className="text-base text-foreground leading-relaxed mt-4">
+              {education.summary}
+            </p>
           </div>
-          <ul className="list-disc pl-4 space-y-1 text-muted-foreground">
-            {description.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        </div>
-      </CardContent>
-    </Card>
+        ))}
+      </div>
+    </div>
   );
 }
