@@ -4,17 +4,20 @@ import Image from "next/image";
 import { Button } from "~/components/ui/button";
 import { useLanguage } from "~/contexts/LanguageContext";
 import { useEffect, useState } from "react";
-import { ScrollChevron } from "~/components/ScrollChevron";
-import { SocialMediaIcons } from "~/components/SocialMediaIcons";
-import { HeroStats } from "~/components/HeroStats";
 
 export function HeroSection() {
   const { translations, language } = useLanguage();
   const [currentSubtitleIndex, setCurrentSubtitleIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!mounted) return;
     const currentSubtitle = translations.hero.subtitles[currentSubtitleIndex];
     const typingSpeed = 100;
     const deletingSpeed = 20;
@@ -40,44 +43,39 @@ export function HeroSection() {
     }, isDeleting ? deletingSpeed : typingSpeed);
 
     return () => clearTimeout(timeout);
-  }, [displayText, currentSubtitleIndex, isDeleting, translations.hero.subtitles]);
+  }, [displayText, currentSubtitleIndex, isDeleting, translations.hero.subtitles, mounted]);
 
   return (
-    <section id="home" className="flex justify-center px-4 min-h-screen py-8 md:py-0 relative">
-      <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 mt-8 md:mt-0">
-        <div className="flex flex-col items-center lg:order-first">
-          <div className="relative h-[280px] w-[280px] md:h-[400px] md:w-[400px] rounded-full bg-gradient-to-b from-primary/50 to-primary overflow-hidden">
-            <Image
-              src="https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0saLwAL4H2rOcYxT5KERhf7DSjJdAngwm0eWpl"
-              alt="Profile picture"
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
-          <SocialMediaIcons />
-        </div>
-
-        <div className="flex flex-col gap-2 text-center lg:text-left">
-          <h1 className="text-3xl md:text-4xl font-bold">{translations.hero.title}</h1>
-          <p className="text-xl md:text-2xl font-semibold text-primary relative">
-            {displayText}
-            <span className="animate-blink ml-1">|</span>
-          </p>
-          <p className="text-muted-foreground mt-4">{translations.hero.description}</p>
-          
-          <HeroStats />
-          
-          <div className="mt-8">
-            <Button size="lg" asChild>
-              <a href={`/cv-${language}.pdf`} download={`cv-${language}.pdf`}>{translations.hero.downloadCV}</a>
-            </Button>
-          </div>
-        </div>
+    <section id="home" className="w-full">
+      <div className="flex flex-col items-start text-left max-w-4xl mx-auto w-full">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4">{translations.hero.title}</h1>
+        <p className="text-xl md:text-2xl font-semibold text-primary relative mb-6">
+          {mounted ? displayText : translations.hero.subtitles[0]}
+          <span className="animate-blink ml-1">|</span>
+        </p>
+        <p className="text-muted-foreground mb-6">
+          {translations.hero.description.split('TutorMundi').map((part, index) => {
+            if (index === 0) return part;
+            return (
+              <span key={index}>
+                <a 
+                  href="https://tutormundi.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="underline decoration-1 cursor-pointer text-muted-foreground hover:text-muted-foreground"
+                >
+                  TutorMundi
+                </a>
+                {part}
+              </span>
+            );
+          })}
+        </p>
+        
+        <Button size="lg" asChild>
+          <a href={`/cv-${language}.pdf`} download={`cv-${language}.pdf`}>{translations.hero.downloadCV}</a>
+        </Button>
       </div>
-      
-      {/* Bouncing chevron to encourage scrolling */}
-      <ScrollChevron />
     </section>
   );
 }

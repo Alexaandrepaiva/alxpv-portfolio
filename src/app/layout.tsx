@@ -2,7 +2,7 @@ import "~/styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Alxpv | Portfolio",
@@ -12,25 +12,18 @@ export const metadata: Metadata = {
 
 import { LanguageProvider } from "~/contexts/LanguageContext";
 import { ThemeProvider } from "~/contexts/ThemeContext";
+import { Layout } from "~/components/Layout";
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={GeistSans.variable}>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            (function() {
-              const theme = localStorage.getItem('theme') || 'light';
-              document.documentElement.classList.add(theme);
-            })();
-          `,
-        }}
-      />
+    <html lang="en" className={`${GeistSans.variable} dark`}>
       <body>
         <ThemeProvider>
-          <LanguageProvider>{children}</LanguageProvider>
+          <LanguageProvider>
+            <Layout>{children}</Layout>
+          </LanguageProvider>
         </ThemeProvider>
         <Analytics />
       </body>

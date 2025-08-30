@@ -1,26 +1,25 @@
 "use client";
 
 import { useLanguage } from "~/contexts/LanguageContext";
-import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuLink } from "~/components/ui/navigation-menu";
 import { LanguageSelector } from "~/components/LanguageSelector";
 import { ThemeToggle } from "~/components/ThemeToggle";
 import Link from "next/link";
 import Image from "next/image";
 
-const sections = ["home", "experience", "education", "projects", "skills", "contact"];
+const navItems = [
+  { href: "/about", label: "about" },
+  { href: "/experience", label: "experience" },
+  { href: "/education", label: "education" },
+  { href: "/projects", label: "projects" },
+  { href: "/skills", label: "skills" },
+  { href: "/contact", label: "contact" },
+];
 
 export function Navbar() {
   const { translations } = useLanguage();
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
-    <nav className="md:fixed relative top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <nav className="md:fixed relative top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="mx-auto max-w-[90rem] px-4">
         <div className="flex h-14 items-center justify-between">
           <div className="flex items-center">
@@ -30,20 +29,19 @@ export function Navbar() {
             </Link>
           </div>
 
-          <NavigationMenu className="hidden md:flex md:flex-1 md:justify-center">
-            <NavigationMenuList>
-              {sections.map((section) => (
-                <NavigationMenuItem key={section}>
-                  <NavigationMenuLink
-                    className="group inline-flex h-9 w-max items-center justify-center px-4 py-2 text-sm font-medium transition-colors hover:text-primary focus:outline-none disabled:pointer-events-none disabled:opacity-50 cursor-pointer"
-                    onClick={() => scrollToSection(section)}
-                  >
-                    {translations.navbar[section as keyof typeof translations.navbar]}
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
+          <div className="hidden md:flex md:flex-1 md:justify-center">
+            <div className="flex items-center space-x-1">
+              {navItems.map((item) => (
+                <Link 
+                  key={item.href}
+                  href={item.href}
+                  className="group inline-flex h-9 w-max items-center justify-center px-4 py-2 text-sm font-medium transition-colors hover:text-primary focus:outline-none disabled:pointer-events-none disabled:opacity-50"
+                >
+                  {translations.navbar[item.label as keyof typeof translations.navbar]}
+                </Link>
               ))}
-            </NavigationMenuList>
-          </NavigationMenu>
+            </div>
+          </div>
 
           <div className="flex items-center gap-2">
             <ThemeToggle />

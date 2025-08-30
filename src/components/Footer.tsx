@@ -7,9 +7,31 @@ export function Footer() {
 
   return (
     <footer className="flex justify-center py-6">
-      <div className="flex items-center gap-1">
-        <span className="text-sm">©</span>
-        <span className="text-sm">{translations.footer.rights}</span>
+      <div className="flex items-center gap-8">
+        <a 
+          href="https://www.linkedin.com/in/paiva240/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-sm font-medium transition-colors hover:text-primary cursor-pointer"
+        >
+          LinkedIn
+        </a>
+        <a 
+          href="https://github.com/Alexaandrepaiva" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-sm font-medium transition-colors hover:text-primary cursor-pointer"
+        >
+          GitHub
+        </a>
+        <a 
+          href="https://x.com/Alexaandrepaiva" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-sm font-medium transition-colors hover:text-primary cursor-pointer"
+        >
+          Twitter
+        </a>
       </div>
     </footer>
   );

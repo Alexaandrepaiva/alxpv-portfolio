@@ -13,7 +13,7 @@ type ThemeContextType = {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>("light");
+  const [theme, setTheme] = useState<Theme>("dark");
   const [mounted, setMounted] = useState(false);
 
   const toggleTheme = () => {
@@ -22,11 +22,27 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   // Initialize theme from localStorage and set mounted state
   useEffect(() => {
-    // Only access localStorage after component has mounted on client
     setMounted(true);
-    const savedTheme = localStorage.getItem("theme") as Theme | null;
-    if (savedTheme) {
-      setTheme(savedTheme);
+    
+    // Get theme from localStorage or default to dark
+    let initialTheme: Theme = "dark";
+    try {
+      const savedTheme = localStorage.getItem("theme") as Theme | null;
+      if (savedTheme && (savedTheme === "dark" || savedTheme === "light")) {
+        initialTheme = savedTheme;
+      }
+    } catch (error) {
+      // Fallback to dark theme if localStorage is not available
+      console.warn("Could not access localStorage for theme preference");
+    }
+    
+    setTheme(initialTheme);
+    
+    // Apply initial theme to avoid flash
+    const root = window.document.documentElement;
+    if (initialTheme !== "dark") {
+      root.classList.remove("dark");
+      root.classList.add(initialTheme);
     }
   }, []);
 
@@ -38,7 +54,11 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     root.classList.remove("dark", "light");
     root.classList.add(theme);
     
-    localStorage.setItem("theme", theme);
+    try {
+      localStorage.setItem("theme", theme);
+    } catch (error) {
+      console.warn("Could not save theme preference to localStorage");
+    }
   }, [theme, mounted]);
 
   const value = {
@@ -46,6 +66,11 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     setTheme,
     toggleTheme
   };
+
+  // Prevent hydration mismatch by not rendering until mounted
+  if (!mounted) {
+    return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;
+  }
 
   return (
     <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
