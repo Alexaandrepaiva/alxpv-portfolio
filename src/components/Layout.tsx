@@ -13,7 +13,7 @@ interface LayoutProps {
 }
 
 const navItems = [
-  { href: "/", label: "home" },
+  { href: "/about", label: "about" },
   { href: "/experience", label: "experience" },
   { href: "/education", label: "education" },
   { href: "/projects", label: "projects" },
@@ -35,7 +35,7 @@ export function Layout({ children }: LayoutProps) {
       <Navbar />
       
       {/* Main Content */}
-      <main className="flex-1 w-full md:pt-14 md:overflow-auto">
+      <main className="flex-1 w-full md:pt-14 md:overflow-hidden">
         {children}
       </main>
       

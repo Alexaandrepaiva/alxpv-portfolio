@@ -2,10 +2,12 @@ import { ContactSection } from "~/components/ContactSection";
 
 export default function ContactPage() {
   return (
-    <div className="flex flex-col items-center w-full">
-      <div className="w-full px-4 sm:px-6 md:px-8 max-w-full md:max-w-5xl mx-auto">
-        <section className="py-16 sm:py-24 mt-8 md:mt-16">
-          <ContactSection />
+    <div className="flex flex-col items-center w-full h-full">
+      <div className="w-full max-w-full md:max-w-5xl mx-auto h-full">
+        <section className="flex justify-center items-center px-4 min-h-[calc(100vh-6.5rem)] md:h-full py-8 md:py-0 relative">
+          <div className="w-full max-w-5xl mx-auto">
+            <ContactSection />
+          </div>
         </section>
       </div>
     </div>

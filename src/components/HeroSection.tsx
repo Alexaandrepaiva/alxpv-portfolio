@@ -48,17 +48,17 @@ export function HeroSection() {
         <div className="flex flex-col items-center lg:order-first">
           <div className="relative h-[280px] w-[280px] md:h-[400px] md:w-[400px] rounded-full bg-gradient-to-b from-primary/50 to-primary overflow-hidden">
             <Image
-              src="https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0saLwAL4H2rOcYxT5KERhf7DSjJdAngwm0eWpl"
+              src="https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0sVjyrTMvzFSaCRrTw8HoymkEGhnxuK1OesNcD"
               alt="Profile picture"
               fill
-              className="object-cover"
+              className="object-cover object-center"
               priority
             />
           </div>
           <SocialMediaIcons />
         </div>
 
-        <div className="flex flex-col gap-2 text-center lg:text-left">
+        <div className="flex flex-col gap-2 text-center lg:text-left lg:justify-center">
           <h1 className="text-3xl md:text-4xl font-bold">{translations.hero.title}</h1>
           <p className="text-xl md:text-2xl font-semibold text-primary relative">
             {displayText}

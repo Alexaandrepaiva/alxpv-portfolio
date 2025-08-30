@@ -3,7 +3,7 @@ export const en = {
     rights: "All rights reserved to Alexandre Paiva"
   },
   navbar: {
-    home: "Home",
+    about: "About",
     experience: "Experience",
     education: "Education",
     projects: "Projects",
@@ -22,7 +22,7 @@ export const en = {
   hero: {
     title: "Alexandre Paiva",
     subtitles: ["Computer Engineer", "Fullstack Developer", "Product Manager", "Artificial Intelligence Enthusiast"],
-    description: "Dedicated Full Stack Developer with 5 years of experience building high-performance applications. I've been working at Brazil's lead tutoring platform, TutorMundi, where I have planned features as PM, designed frames and components and implemented features serving half a million tutorings anually using Meteor.js and NoSQL. Additionally, completed two significant freelance projects: a pioneering construction billing website utilizing Brazilian databases and an efficient medical consultation scheduling system for hospitals and clinics—both developed with Next.js, React, Node.js, and Prisma. Seeking a remote position with a fast-growing company that values continuous learning, merit-based advancement, and maintains a structured yet agile development pace.",
+    description: "Computer Engineering professional specialized in transforming strategic vision into scalable tech products that deliver measurable impact. Led end-to-end development of high-impact features including live voice tutoring systems and AI-powered platforms with OCR capabilities at an edTech company, successfully turning ambitious concepts into production-ready solutions. My expertise spans product management and full-stack development, enabling me to bridge strategic vision with technical execution through data analysis, user research, and modern web technologies (React, Node.js, Next.js, AI integration). Having delivered diverse projects across industries—from construction cost-estimation to medical scheduling platforms—I combine technical proficiency, product intuition, and leadership experience to consistently transform business goals into scalable products that serve real customers.",
     downloadCV: "Download CV"
   },
   languages: {
@@ -158,5 +158,9 @@ export const en = {
       message: "Message",
       send: "Send Message"
     }
+  },
+  about: {
+    title: "Engineering vision into reality",
+    description: "Computer Engineering professional specialized in transforming strategic vision into scalable tech products that deliver measurable impact. Led end-to-end development of high-impact features including live voice tutoring systems and AI-powered platforms with OCR capabilities at an edTech company, successfully turning ambitious concepts into production-ready solutions. My expertise spans product management and full-stack development, enabling me to bridge strategic vision with technical execution through data analysis, user research, and modern web technologies (React, Node.js, Next.js, AI integration). Having delivered diverse projects across industries—from construction cost-estimation to medical scheduling platforms—I combine technical proficiency, product intuition, and leadership experience to consistently transform business goals into scalable products that serve real customers."
   }
 }

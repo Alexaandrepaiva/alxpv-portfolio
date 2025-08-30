@@ -3,7 +3,7 @@ export const pt = {
     rights: "Todos os direitos reservados a Alexandre Paiva"
   },
   navbar: {
-    home: "Início",
+    about: "Sobre",
     experience: "Experiência",
     education: "Educação",
     projects: "Projetos",
@@ -22,7 +22,7 @@ export const pt = {
   hero: {
     title: "Alexandre Paiva",
     subtitles: ["Engenheiro de Computação", "Desenvolvedor Fullstack", "Gerente de Produto", "Entusiasta de Inteligência Artificial"],
-    description: "Desenvolvedor Full Stack dedicado com 5 anos de experiência construindo aplicações de alta performance. Tenho trabalhado na principal plataforma de tutoria do Brasil, TutorMundi, onde planejei recursos como PM, projetei frames e componentes e implementei funcionalidades atendendo meio milhão de tutorias anualmente usando Meteor.js e NoSQL. Além disso, completei dois projetos freelance significativos: um site pioneiro de faturamento de construção utilizando bancos de dados brasileiros e um sistema eficiente de agendamento de consultas médicas para hospitais e clínicas—ambos desenvolvidos com Next.js, React, Node.js e Prisma. Buscando uma posição remota em uma empresa de rápido crescimento que valoriza o aprendizado contínuo, avanço baseado em mérito e mantém um ritmo de desenvolvimento estruturado mas ágil.",
+    description: "Engenheiro da Computação especializado em transformar visão estratégica em produtos tecnológicos escaláveis que entregam impacto mensurável. Liderei desenvolvimento end-to-end de funcionalidades de alto impacto incluindo sistemas de tutoria por voz ao vivo e plataformas com IA e capacidades de OCR de escrita manual em empresa de edTech, transformando conceitos ambiciosos em soluções prontas para produção. Minha expertise abrange gestão de produtos e desenvolvimento full-stack, permitindo conectar visão estratégica com execução técnica através de análise de dados, pesquisa de usuários e tecnologias web modernas (React, Node.js, Next.js, integração com IA). Tendo entregue projetos diversos em múltiplas indústrias—desde estimativa de custos de construção até plataformas de agendamento médico—combino proficiência técnica, intuição de produto e experiência em liderança para consistentemente transformar objetivos de negócio em produtos escaláveis que atendem clientes reais.",
     downloadCV: "Baixar CV"
   },
   languages: {
@@ -158,5 +158,9 @@ export const pt = {
       message: "Mensagem",
       send: "Enviar Mensagem"
     }
+  },
+  about: {
+    title: "Transformando visão em realidade",
+    description: "Engenheiro da Computação especializado em transformar visão estratégica em produtos tecnológicos escaláveis que entregam impacto mensurável. Liderei desenvolvimento end-to-end de funcionalidades de alto impacto incluindo sistemas de tutoria por voz ao vivo e plataformas com IA e capacidades de OCR de escrita manual em empresa de edTech, transformando conceitos ambiciosos em soluções prontas para produção. Minha expertise abrange gestão de produtos e desenvolvimento full-stack, permitindo conectar visão estratégica com execução técnica através de análise de dados, pesquisa de usuários e tecnologias web modernas (React, Node.js, Next.js, integração com IA). Tendo entregue projetos diversos em múltiplas indústrias—desde estimativa de custos de construção até plataformas de agendamento médico—combino proficiência técnica, intuição de produto e experiência em liderança para consistentemente transformar objetivos de negócio em produtos escaláveis que atendem clientes reais."
   }
 }

@@ -13,7 +13,7 @@ type ThemeContextType = {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>("light");
+  const [theme, setTheme] = useState<Theme>("dark");
   const [mounted, setMounted] = useState(false);
 
   const toggleTheme = () => {
@@ -24,15 +24,15 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     setMounted(true);
     
-    // Get theme from localStorage or default to light
-    let initialTheme: Theme = "light";
+    // Get theme from localStorage or default to dark
+    let initialTheme: Theme = "dark";
     try {
       const savedTheme = localStorage.getItem("theme") as Theme | null;
       if (savedTheme && (savedTheme === "dark" || savedTheme === "light")) {
         initialTheme = savedTheme;
       }
     } catch (error) {
-      // Fallback to light theme if localStorage is not available
+      // Fallback to dark theme if localStorage is not available
       console.warn("Could not access localStorage for theme preference");
     }
     

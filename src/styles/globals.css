@@ -32,11 +32,11 @@
     --chart-5: 27 87% 67%;
     --radius: 0.5rem}
   .dark {
-    --background: 20 2% 17%;
+    --background: 180 4% 10%;
     --foreground: 60 9.1% 97.8%;
-    --card: 20 2% 17%;
+    --card: 180 4% 10%;
     --card-foreground: 60 9.1% 97.8%;
-    --popover: 20 2% 17%;
+    --popover: 180 4% 10%;
     --popover-foreground: 60 9.1% 97.8%;
     --primary: 60 9.1% 97.8%;
     --primary-foreground: 24 9.8% 10%;

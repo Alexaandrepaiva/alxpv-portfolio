@@ -8,7 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const navItems = [
-  { href: "/", label: "home" },
+  { href: "/about", label: "about" },
   { href: "/experience", label: "experience" },
   { href: "/education", label: "education" },
   { href: "/projects", label: "projects" },
