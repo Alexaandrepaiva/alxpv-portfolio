@@ -153,7 +153,7 @@ export const es = {
   about: {
     title: "¿Quién soy?",
     paragraphs: [
-      "Profesional en Ingeniería de Computación especializado en transformar visión estratégica en productos tecnológicos escalables que entregan impacto medible.",
+      "Ingeniero en Computación especializado en transformar visión estratégica en productos tecnológicos escalables que entregan impacto medible.",
       "Planeé y desarrollé funcionalidades de alto impacto incluyendo sistemas de tutoría por voz en vivo y plataformas con IA y capacidades de OCR en empresa edTech, transformando exitosamente conceptos ambiciosos en soluciones listas para producción.",
       "Mi experiencia abarca gestión de productos y desarrollo full-stack, permitiéndome conectar visión estratégica con ejecución técnica a través de análisis de datos, investigación de usuarios y tecnologías web modernas (React, Node.js, Next.js, integración con IA).",
     ]

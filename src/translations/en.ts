@@ -153,7 +153,7 @@ export const en = {
   about: {
     title: "Who am I?",
     paragraphs: [
-      "Computer Engineering professional specialized in transforming strategic vision into scalable tech products that deliver measurable impact.",
+      "Computer Engineer specialized in transforming strategic vision into scalable tech products that deliver measurable impact.",
       "Planned and developed high-impact features including live voice tutoring systems and AI-powered platforms with OCR capabilities at an edTech company, successfully turning ambitious concepts into production-ready solutions.",
       "My expertise spans product management and full-stack development, enabling me to bridge strategic vision with technical execution through data analysis, user research, and modern web technologies (React, Node.js, Next.js, AI integration).",
     ]
