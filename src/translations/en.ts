@@ -8,7 +8,6 @@ export const en = {
     experience: "Experience",
     education: "Education",
     projects: "Projects",
-    skills: "Skills",
     contact: "Contact"
   },
   theme: {
@@ -22,7 +21,7 @@ export const en = {
   },
   hero: {
     title: "Alexandre Paiva",
-    subtitles: ["Computer Engineer", "Product Manager", "Software Developer", "Artificial Intelligence Enthusiast", "Tennis Player", "Aspiring Sommelier"],
+    subtitles: ["Engineering Vision into Reality", "Computer Engineer", "Product Manager", "Software Developer", "Artificial Intelligence Enthusiast", "Tennis Player", "Aspiring Sommelier"],
     description: "Product Manager at TutorMundi",
     downloadCV: "Download CV"
   },
@@ -44,99 +43,97 @@ export const en = {
   },
   sections: {
     experience: {
-      title: "Experience",
+      title: "Built Through Doing",
       items: [
         {
-          title: "Associate Product Manager and Fullstack Developer Junior",
+          role: "Associate Product Manager",
           company: "TutorMundi",
-          startDate: "April 2023",
-          avatar: "https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0sSFbMdz5tygmu5LxzRTcYHJ8abUeBPofQ0iWd",
-          skills: ["Meteor.js", "Node.js", "MongoDB", "NoSQL", "Figma", "Analytics"],
-          description: [
-            "Directed full product lifecycle from discovery to launch, including feature planning, technical and product specifications development, launch strategy creation, and post-launch performance validation and usability testing",
-            "Progressed from internship to full-time developer role. Engineered critical platform features including AI-powered automated response systems, voice functionality for live tutoring sessions, and a custom digital whiteboard solution",
-            "Mentored junior developers, resolved production bugs, maintained codebase quality, updated library versions, and analyzed feature performance through platform analytics"
-          ]
+          startDate: "April 2024",
+          endDate: "present",
+          duration: "1 year 5 months",
+          summary: "Responsible for translating company strategy into an actionable product roadmap, managing the end-to-end lifecycle of new features from concept and planning to launch and performance analysis. I crafted detailed product specifications to guide design and engineering teams and continuously monitored platform KPIs, including engagement, satisfaction, and feature adoption."
         },
         {
-          title: "Simulation Engineer Intern",
+          role: "Junior Software Developer",
+          company: "TutorMundi",
+          startDate: "April 2024",
+          endDate: "September 2025",
+          duration: "1 year 6 months",
+          summary: "Elevated to a role with expanded responsibilities within the software development lifecycle. I moved beyond task execution to actively contribute to technical discussions on solution architecture and the planning of complex features. In this role, I played a key part in developing new functionalities and application improvements that directly impacted thousands of users."
+        },
+        {
+          role: "Software Developer Intern",
+          company: "TutorMundi",
+          startDate: "April 2023",
+          endDate: "March 2024",
+          duration: "1 year",
+          summary: "Trained in the company's core technologies and tools, including Meteor.js, Node.js, and NoSQL (MongoDB), as well as design (Figma) and data analytics platforms (Amplitude, Metabase). I actively participated in the full development lifecycle, from providing support and fixing bugs in production to code maintenance and implementing new platform features, always focusing on delivering robust, scalable, and high-quality code aligned with company standards."
+        },
+        {
+          role: "Software Developer",
           company: "CIAvEx",
           startDate: "August 2024",
           endDate: "December 2024",
-          avatar: "https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0sA4ntYPXuhnVZQSP9fXUmRcINExdzHCwjDoY2",
-          skills: ["Python", "Simulator"],
-          description: [
-            "Engineered a Python-based desktop simulator for helicopter radio navigation and communication equipment",
-            "Implemented mathematical models for radio signal propagation and navigation algorithms",
-            "Created a user-friendly interface allowing instructors to create various training scenarios",
-            "Collaborated with aviation experts to ensure simulator accuracy and educational effectiveness"
-          ]
+          duration: "5 months",
+          summary: "Engineered a Python-based desktop simulator for helicopter radio navigation and communication equipment where I implemented mathematical models for radio signal propagation and navigation algorithms, created a user-friendly interface allowing instructors to create various training scenarios while I collaborated with aviation experts to ensure simulator accuracy and educational effectiveness."
         },
         {
-          title: "Scientific Researcher",
-          company: "LNCC",
-          startDate: "July 2022",
-          avatar: "https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0s1bNXWUnTEWtS2F59V4BdOAGcqnsUMp0JDZIR",
-          endDate: "June 2024",
-          skills: ["Python", "C++", "AI", "LLM"],
-          description: [
-            "Analyzed experimental runtime performance of optimization algorithms, implemented and tested various optimization strategies to enhance algorithm efficiency, including:",
-            "Programming language migrations for performance improvements",
-            "Storage method enhancements for improved I/O performance",
-            "Parallelization techniques for multi-core processing efficiency",
-            "Cache optimization strategies for numerical computing",
-            "Developed and trained a machine learning model to automatically measure and predict runtime performance of novel experimental algorithms"
-          ]
-        },
-        {
-          title: "Software Developer, Battalion Coordinator and CEO",
+          role: "CEO",
           company: "IME Júnior",
-          startDate: "January 2021",
-          avatar: "https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0sMlmZVxrDmx1ClgsIuwLbBVnz3TQavr4GASKe",
+          startDate: "January 2023",
           endDate: "December 2023",
-          skills: ["HTML", "CSS", "JavaScript", "Tailwind", "Firebase", "Next.js", "Node.js", "SQL", "Postgres"],
-          description: [
-            "Progressed from trainee to CEO through multiple roles (Trainee, Member, Coordinator, President)",
-            "Developed three major client projects: • React Native personal diary application with payment system for a dentist • Next.js platform for Solar21 to manage referrals and referral benefits • E-commerce site for personalized artwork with integrated payment system",
-            "Planned, organized, and taught new members the necessary skills to become developers in the company's Computing Battalion",
-            "Served as legal and administrative representative, providing strategic direction and ensuring cohesive company operations while leading company to achieve R$100,000 target in closed projects through effective team management and calendar coordination, the highest income in history"
-          ]
+          duration: "1 year",
+          summary: "Responsible for setting the strategic direction and managing the executive board. My leadership focused on ensuring sustainable growth, internal cohesion, and aligning all operations with the organization's long-term vision while representing the company within the junior enterprise ecosystem and with institutional partners."
+        },
+        {
+          role: "Head of Software Engineering",
+          company: "IME Júnior",
+          startDate: "August 2022",
+          endDate: "December 2022",
+          duration: "5 months",
+          summary: "Responsible for managing the Software Development group, leading the entire project lifecycle from new business prospecting and technical assessment to final solution delivery. Focused on creating commercial proposals, defining project scope, timelines, and costs, and coordinating development teams to ensure technical excellence and strategic alignment with client objectives."
+        },
+        {
+          role: "Software Development Consultant",
+          company: "IME Júnior",
+          startDate: "January 2022",
+          endDate: "July 2022",
+          duration: "7 months",
+          summary: "Developed web solutions for external clients, participating in the entire project lifecycle, from requirement gathering and direct client communication to implementation and results tracking. Stack used: JavaScript, React, React-Native, TypeScript, Next.js, Node.js, and Firebase."
         }
       ]
     },
     education: {
-      title: "Education",
+      title: "Academic Footprints",
       items: [
         {
           degree: "Bachelor in Computer Engineering",
           institution: "Instituto Militar de Engenharia (IME)",
-          period: "2021 - 2025",
-          description: [
-            "Brazil's highest-ranked public engineering institution according to ENADE",
-            "Coursework included: Advanced Algorithms, Linear Algebra, Numerical Methods, Calculus, Probability & Statistics, Machine Learning Fundamentals"
-          ]
+          startDate: "2021",
+          endDate: "2025",
+          duration: "5 years",
+          summary: "Brazil's highest-ranked public engineering institution according to ENADE. Coursework included: Advanced Algorithms, Linear Algebra, Numerical Methods, Calculus, Probability & Statistics, Machine Learning Fundamentals."
         },
         {
           degree: "International High School",
           institution: "Marian Academy (Guyana)",
-          period: "2016 - 2018",
-          description: [
-            "Complete high school abroad focusing in math, science and physics subjects",
-            "Complemented the graduation with CAPE exams, getting highest score in Applied Mathematics, Statistics and Physics"
-          ]
+          startDate: "2016",
+          endDate: "2018",
+          duration: "3 years",
+          summary: "Complete high school abroad focusing in math, science and physics subjects. Complemented the graduation with CAPE exams, getting highest score in Applied Mathematics, Statistics and Physics."
         },
         {
           degree: "National High School",
           institution: "Colégio Militar de Manaus",
-          period: "2016 - 2018",
-          description: [
-            "While living abroad still managed to graduate at high school remotely in Brazil"
-          ]
+          startDate: "2016",
+          endDate: "2018",
+          duration: "3 years",
+          summary: "While living abroad still managed to graduate at high school remotely in Brazil."
         }
       ]
     },
     projects: {
-      title: "Projects",
+      title: "Built & Shipped",
       items: [
         {
           name: "Project Alpha",
@@ -145,24 +142,16 @@ export const en = {
         }
       ]
     },
-    skills: {
-      title: "Skills",
-      categories: {
-        frontend: "Frontend",
-        backend: "Backend",
-        tools: "Tools"
-      }
-    },
+
     contact: {
-      title: "Contact",
+      title: "Reach Out",
       email: "Email",
       message: "Message",
       send: "Send Message"
     }
   },
   about: {
-    title: "Alexandre Paiva",
-    subtitle: "ENGINEERING VISION INTO REALITY",
+    title: "Who am I?",
     paragraphs: [
       "Computer Engineering professional specialized in transforming strategic vision into scalable tech products that deliver measurable impact.",
       "Planned and developed high-impact features including live voice tutoring systems and AI-powered platforms with OCR capabilities at an edTech company, successfully turning ambitious concepts into production-ready solutions.",

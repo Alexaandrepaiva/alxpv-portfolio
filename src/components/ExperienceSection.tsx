@@ -12,22 +12,7 @@ export function ExperienceSection() {
         {translations.sections.experience.title}
       </h2>
 
-      <div className="relative space-y-8 md:space-y-20">
-        {/* Timeline line */}
-        <div className="absolute left-[5px] top-0 w-px h-full bg-foreground hidden md:block"></div>
-        {translations.sections.experience.items.map((job, index) => (
-          <Experience
-            key={index}
-            jobTitle={job.title}
-            companyName={job.company}
-            startDate={job.startDate}
-            endDate={job.endDate}
-            skills={job.skills}
-            description={job.description}
-            avatar={job.avatar}
-          />
-        ))}
-      </div>
+      <Experience />
     </div>
   );
 }

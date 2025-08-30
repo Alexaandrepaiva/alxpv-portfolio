@@ -10,10 +10,9 @@ export function AboutSection() {
   return (
     <section className="w-full">
       <div className="w-full max-w-5xl mx-auto">
-        {/* Title and Subtitle */}
+        {/* Title */}
         <div className="text-center mb-8">
           <h1 className="text-3xl md:text-4xl font-bold mb-2">{translations.about.title}</h1>
-          <h2 className="text-xl md:text-2xl text-foreground/70 font-medium tracking-wider">{translations.about.subtitle}</h2>
         </div>
         
         {/* Content Layout */}

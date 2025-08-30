@@ -8,7 +8,6 @@ export const pt = {
     experience: "Experiência",
     education: "Educação",
     projects: "Projetos",
-    skills: "Habilidades",
     contact: "Contato"
   },
   theme: {
@@ -22,7 +21,7 @@ export const pt = {
   },
   hero: {
     title: "Alexandre Paiva",
-    subtitles: ["Engenheiro de Computação", "Gerente de Produto", "Desenvolvedor de Software", "Entusiasta de Inteligência Artificial", "Jogador de Tênis", "Aspirante a Sommelier"],
+    subtitles: ["Transformando Visão em Realidade", "Engenheiro de Computação", "Gerente de Produto", "Desenvolvedor de Software", "Entusiasta de Inteligência Artificial", "Jogador de Tênis", "Aspirante a Sommelier"],
     description: "Gerente de Produto na TutorMundi",
     downloadCV: "Baixar CV"
   },
@@ -44,99 +43,97 @@ export const pt = {
   },
   sections: {
     experience: {
-      title: "Experiência",
+      title: "Registros de Impacto",
       items: [
         {
-          title: "Gerente de Produto e Desenvolvedor Fullstack Júnior",
+          role: "Gerente de Produto Associado",
+          company: "TutorMundi",
+          startDate: "Abril 2024",
+          endDate: "presente",
+          duration: "1 ano 5 meses",
+          summary: "Responsável por traduzir a estratégia da empresa em um roadmap de produto acionável, gerenciando o ciclo de vida completo de novas funcionalidades desde o conceito e planejamento até o lançamento e análise de desempenho. Elaborei especificações detalhadas de produto para orientar as equipes de design e engenharia e monitorei continuamente os KPIs da plataforma, incluindo engajamento, satisfação e adoção de funcionalidades."
+        },
+        {
+          role: "Desenvolvedor de Software Júnior",
+          company: "TutorMundi",
+          startDate: "Abril 2024",
+          endDate: "Setembro 2025",
+          duration: "1 ano 6 meses",
+          summary: "Promovido a uma função com responsabilidades expandidas dentro do ciclo de vida de desenvolvimento de software. Evoluí além da execução de tarefas para contribuir ativamente em discussões técnicas sobre arquitetura de soluções e planejamento de funcionalidades complexas. Nesta função, desempenhei um papel fundamental no desenvolvimento de novas funcionalidades e melhorias de aplicação que impactaram diretamente milhares de usuários."
+        },
+        {
+          role: "Estagiário de Desenvolvedor de Software",
           company: "TutorMundi",
           startDate: "Abril 2023",
-          avatar: "https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0sSFbMdz5tygmu5LxzRTcYHJ8abUeBPofQ0iWd",
-          skills: ["Meteor.js", "Node.js", "MongoDB", "NoSQL", "Figma", "Analytics"],
-          description: [
-            "Direcionei o ciclo de vida completo do produto, desde a descoberta até o lançamento, incluindo planejamento de recursos, desenvolvimento de especificações técnicas e de produto, criação de estratégia de lançamento e validação de desempenho pós-lançamento e testes de usabilidade",
-            "Progredi de estágio para desenvolvedor em tempo integral. Desenvolvi recursos críticos da plataforma, incluindo sistemas de resposta automatizada com IA, funcionalidade de voz para sessões de tutoria ao vivo e uma solução personalizada de quadro digital",
-            "Orientei desenvolvedores júnior, resolvi bugs de produção, mantive a qualidade do código, atualizei versões de bibliotecas e analisei o desempenho dos recursos através de análises da plataforma"
-          ]
+          endDate: "Março 2024",
+          duration: "1 ano",
+          summary: "Treinado nas principais tecnologias e ferramentas da empresa, incluindo Meteor.js, Node.js e NoSQL (MongoDB), bem como plataformas de design (Figma) e análise de dados (Amplitude, Metabase). Participei ativamente do ciclo completo de desenvolvimento, desde o fornecimento de suporte e correção de bugs em produção até a manutenção de código e implementação de novas funcionalidades da plataforma, sempre focando em entregar código robusto, escalável e de alta qualidade alinhado com os padrões da empresa."
         },
         {
-          title: "Desenvolvedor de Software, Coordenador de Batalhão e CEO",
-          company: "IME Júnior",
-          startDate: "Janeiro 2021",
-          avatar: "https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0sMlmZVxrDmx1ClgsIuwLbBVnz3TQavr4GASKe",
-          endDate: "Dezembro 2023",
-          skills: ["HTML", "CSS", "JavaScript", "Tailwind", "Firebase", "Next.js", "Node.js", "SQL", "Postgres"],
-          description: [
-            "Progredi de trainee a CEO através de múltiplos papéis (Trainee, Membro, Coordenador, Presidente)",
-            "Desenvolvi três grandes projetos para clientes: • Aplicativo de diário pessoal em React Native com sistema de pagamento para um dentista • Plataforma Next.js para Solar21 para gerenciar indicações e benefícios de referência • Site de e-commerce para obras de arte personalizadas com sistema de pagamento integrado",
-            "Planejei, organizei e ensinei aos novos membros as habilidades necessárias para se tornarem desenvolvedores no Batalhão de Computação da empresa",
-            "Atuei como representante legal e administrativo, fornecendo direção estratégica e garantindo operações coesas da empresa, ao mesmo tempo em que liderei a empresa para atingir a meta de R$100.000 em projetos fechados através de gerenciamento eficaz de equipe e coordenação de calendário, a maior receita da história"
-          ]
-        },
-        {
-          title: "Estagiário de Engenharia de Simulação",
+          role: "Desenvolvedor de Software",
           company: "CIAvEx",
           startDate: "Agosto 2024",
-          avatar: "https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0sA4ntYPXuhnVZQSP9fXUmRcINExdzHCwjDoY2",
           endDate: "Dezembro 2024",
-          skills: ["Python", "Simulator"],
-          description: [
-            "Desenvolvi um simulador desktop baseado em Python para equipamentos de navegação e comunicação por rádio de helicóptero",
-            "Implementei modelos matemáticos para propagação de sinais de rádio e algoritmos de navegação",
-            "Criei uma interface amigável permitindo que instrutores criassem vários cenários de treinamento",
-            "Colaborei com especialistas em aviação para garantir a precisão e eficácia educacional do simulador"
-          ]
+          duration: "5 meses",
+          summary: "Desenvolvi um simulador desktop baseado em Python para equipamentos de radionavegação e comunicação de helicópteros, onde implementei modelos matemáticos para propagação de sinais de rádio e algoritmos de navegação, criei uma interface amigável permitindo que instrutores criassem vários cenários de treinamento enquanto colaborei com especialistas em aviação para garantir a precisão e eficácia educacional do simulador."
         },
         {
-          title: "Pesquisador Científico",
-          company: "LNCC",
-          startDate: "Julho 2022",
-          avatar: "https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0s1bNXWUnTEWtS2F59V4BdOAGcqnsUMp0JDZIR",
-          endDate: "Junho 2024",
-          skills: ["Python", "C++", "AI", "LLM"],
-          description: [
-            "Analisei o desempenho em tempo de execução experimental de algoritmos de otimização, implementei e testei várias estratégias de otimização para melhorar a eficiência do algoritmo, incluindo:",
-            "Migrações de linguagem de programação para melhorias de desempenho",
-            "Aprimoramentos do método de armazenamento para melhor desempenho de E/S",
-            "Técnicas de paralelização para eficiência de processamento multicore",
-            "Estratégias de otimização de cache para computação numérica",
-            "Desenvolvi e treinei um modelo de aprendizado de máquina para medir e prever automaticamente o desempenho em tempo de execução de novos algoritmos experimentais"
-          ]
+          role: "CEO",
+          company: "IME Júnior",
+          startDate: "Janeiro 2023",
+          endDate: "Dezembro 2023",
+          duration: "1 ano",
+          summary: "Responsável por definir a direção estratégica e gerenciar o conselho executivo. Minha liderança focou em garantir crescimento sustentável, coesão interna e alinhar todas as operações com a visão de longo prazo da organização, representando a empresa dentro do ecossistema de empresa júnior e com parceiros institucionais."
+        },
+        {
+          role: "Chefe de Engenharia de Software",
+          company: "IME Júnior",
+          startDate: "Agosto 2022",
+          endDate: "Dezembro 2022",
+          duration: "5 meses",
+          summary: "Responsável por gerenciar o grupo de Desenvolvimento de Software, liderando todo o ciclo de vida do projeto desde a prospecção de novos negócios e avaliação técnica até a entrega final da solução. Focado em criar propostas comerciais, definir escopo do projeto, cronogramas e custos, e coordenar equipes de desenvolvimento para garantir excelência técnica e alinhamento estratégico com os objetivos do cliente."
+        },
+        {
+          role: "Consultor de Desenvolvimento de Software",
+          company: "IME Júnior",
+          startDate: "Janeiro 2022",
+          endDate: "Julho 2022",
+          duration: "7 meses",
+          summary: "Desenvolvi soluções web para clientes externos, participando de todo o ciclo de vida do projeto, desde a coleta de requisitos e comunicação direta com o cliente até a implementação e rastreamento de resultados. Stack utilizada: JavaScript, React, React-Native, TypeScript, Next.js, Node.js e Firebase."
         }
       ]
     },
     education: {
-      title: "Educação",
+      title: "Passos Acadêmicos",
       items: [
         {
           degree: "Bacharelado em Engenharia da Computação",
           institution: "Instituto Militar de Engenharia (IME)",
-          period: "2021 - 2025",
-          description: [
-            "Instituição pública de engenharia mais bem classificada do Brasil de acordo com o ENADE",
-            "Currículo incluiu: Algoritmos Avançados, Álgebra Linear, Métodos Numéricos, Cálculo, Probabilidade e Estatística, Fundamentos de Aprendizado de Máquina"
-          ]
+          startDate: "2021",
+          endDate: "2025",
+          duration: "5 anos",
+          summary: "Instituição pública de engenharia mais bem classificada do Brasil de acordo com o ENADE. Currículo incluiu: Algoritmos Avançados, Álgebra Linear, Métodos Numéricos, Cálculo, Probabilidade e Estatística, Fundamentos de Aprendizado de Máquina."
         },
         {
           degree: "Ensino Médio Internacional",
           institution: "Marian Academy (Guiana)",
-          period: "2016 - 2018",
-          description: [
-            "Completou o ensino médio no exterior com foco em matemática, ciências e física",
-            "Complementou a graduação com exames CAPE, obtendo a maior pontuação em Matemática Aplicada, Estatística e Física"
-          ]
+          startDate: "2016",
+          endDate: "2018",
+          duration: "3 anos",
+          summary: "Completou o ensino médio no exterior com foco em matemática, ciências e física. Complementou a graduação com exames CAPE, obtendo a maior pontuação em Matemática Aplicada, Estatística e Física."
         },
         {
           degree: "Ensino Médio Nacional",
           institution: "Colégio Militar de Manaus",
-          period: "2016 - 2018",
-          description: [
-            "Enquanto morava no exterior, conseguiu se formar no ensino médio remotamente no Brasil"
-          ]
+          startDate: "2016",
+          endDate: "2018",
+          duration: "3 anos",
+          summary: "Enquanto morava no exterior, conseguiu se formar no ensino médio remotamente no Brasil."
         }
       ]
     },
     projects: {
-      title: "Projetos",
+      title: "Desenvolvidos e Entregues",
       items: [
         {
           name: "Projeto Alpha",
@@ -145,24 +142,16 @@ export const pt = {
         }
       ]
     },
-    skills: {
-      title: "Habilidades",
-      categories: {
-        frontend: "Frontend",
-        backend: "Backend",
-        tools: "Ferramentas"
-      }
-    },
+
     contact: {
-      title: "Contato",
+      title: "Fale Comigo",
       email: "Email",
       message: "Mensagem",
       send: "Enviar Mensagem"
     }
   },
   about: {
-    title: "Alexandre Paiva",
-    subtitle: "Transformando visão em realidade",
+    title: "Quem sou eu?",
     paragraphs: [
       "Engenheiro da Computação especializado em transformar visão estratégica em produtos tecnológicos escaláveis que entregam impacto mensurável.",
       "Planejei e desenvolvi funcionalidades de alto impacto incluindo sistemas de tutoria por voz ao vivo e plataformas com IA e capacidades de OCR de escrita manual em empresa de edTech, transformando conceitos ambiciosos em soluções prontas para produção.",
