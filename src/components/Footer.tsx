@@ -22,7 +22,7 @@ export function Footer() {
           rel="noopener noreferrer"
           className="text-sm font-medium transition-colors hover:text-primary cursor-pointer"
         >
-          Github
+          GitHub
         </a>
         <a 
           href="https://x.com/Alexaandrepaiva" 
