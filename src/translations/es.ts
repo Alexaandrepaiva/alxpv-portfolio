@@ -8,7 +8,6 @@ export const es = {
     experience: "Experiencia",
     education: "Educación",
     projects: "Proyectos",
-
     contact: "Contacto"
   },
   theme: {
@@ -152,7 +151,7 @@ export const es = {
     }
   },
   about: {
-    title: "Quién soy?",
+    title: "¿Quién soy?",
     paragraphs: [
       "Profesional en Ingeniería de Computación especializado en transformar visión estratégica en productos tecnológicos escalables que entregan impacto medible.",
       "Planeé y desarrollé funcionalidades de alto impacto incluyendo sistemas de tutoría por voz en vivo y plataformas con IA y capacidades de OCR en empresa edTech, transformando exitosamente conceptos ambiciosos en soluciones listas para producción.",

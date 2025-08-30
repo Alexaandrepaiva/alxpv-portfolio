@@ -8,7 +8,6 @@ export const en = {
     experience: "Experience",
     education: "Education",
     projects: "Projects",
-
     contact: "Contact"
   },
   theme: {
