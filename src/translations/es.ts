@@ -47,60 +47,60 @@ export const es = {
       title: "Experiencia",
       items: [
         {
-          title: "Gerente de Producto Asociado y Desarrollador Fullstack Junior",
+          role: "Gerente de Producto Asociado",
           company: "TutorMundi",
-          startDate: "Abril 2023",
-          avatar: "https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0sSFbMdz5tygmu5LxzRTcYHJ8abUeBPofQ0iWd",
-          skills: ["Meteor.js", "Node.js", "MongoDB", "NoSQL", "Figma", "Analytics"],
-          description: [
-            "Dirigí el ciclo de vida completo del producto desde el descubrimiento hasta el lanzamiento, incluyendo la planificación de características, desarrollo de especificaciones técnicas y de producto, creación de estrategia de lanzamiento, y validación de rendimiento post-lanzamiento y pruebas de usabilidad",
-            "Progresé de pasantía a desarrollador a tiempo completo. Diseñé características críticas de la plataforma, incluyendo sistemas de respuesta automática impulsados por IA, funcionalidad de voz para sesiones de tutoría en vivo, y una solución de pizarra digital personalizada",
-            "Mentoré a desarrolladores junior, resolví errores de producción, mantuve la calidad del código, actualicé versiones de bibliotecas y analicé el rendimiento de las características a través de análisis de plataforma"
-          ]
+          startDate: "abr de 2024",
+          endDate: "presente",
+          duration: "1 año 5 meses",
+          summary: "Responsable de traducir la estrategia de la empresa en una hoja de ruta de producto accionable, gestionando el ciclo de vida completo de nuevas funcionalidades desde el concepto y planificación hasta el lanzamiento y análisis de rendimiento. Elaboré especificaciones detalladas de producto para guiar a los equipos de diseño e ingeniería y monitoreé continuamente los KPIs de la plataforma, incluyendo participación, satisfacción y adopción de funcionalidades."
         },
         {
-          title: "Pasante de Ingeniería de Simulación",
+          role: "Desarrollador de Software Junior",
+          company: "TutorMundi",
+          startDate: "abr de 2024",
+          endDate: "sept 2025",
+          duration: "1 año 6 meses",
+          summary: "Promovido a un rol con responsabilidades expandidas dentro del ciclo de vida de desarrollo de software. Evolucioné más allá de la ejecución de tareas para contribuir activamente en discusiones técnicas sobre arquitectura de soluciones y planificación de funcionalidades complejas. En este rol, desempeñé un papel clave en el desarrollo de nuevas funcionalidades y mejoras de aplicación que impactaron directamente a miles de usuarios."
+        },
+        {
+          role: "Pasante de Desarrollador de Software",
+          company: "TutorMundi",
+          startDate: "abril 2023",
+          endDate: "marzo 2024",
+          duration: "1 año",
+          summary: "Entrenado en las principales tecnologías y herramientas de la empresa, incluyendo Meteor.js, Node.js y NoSQL (MongoDB), así como plataformas de diseño (Figma) y análisis de datos (Amplitude, Metabase). Participé activamente en el ciclo completo de desarrollo, desde brindar soporte y corregir errores en producción hasta mantenimiento de código e implementación de nuevas funcionalidades de la plataforma, siempre enfocándome en entregar código robusto, escalable y de alta calidad alineado con los estándares de la empresa."
+        },
+        {
+          role: "Desarrollador de Software",
           company: "CIAvEx",
-          startDate: "Agosto 2024",
-          endDate: "Diciembre 2024",
-          avatar: "https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0sA4ntYPXuhnVZQSP9fXUmRcINExdzHCwjDoY2",
-          skills: ["Python", "Simulador"],
-          description: [
-            "Desarrollé un simulador de escritorio basado en Python para equipos de radionavegación y comunicación de helicópteros",
-            "Implementé modelos matemáticos para propagación de señales de radio y algoritmos de navegación",
-            "Creé una interfaz amigable que permite a los instructores crear varios escenarios de entrenamiento",
-            "Colaboré con expertos en aviación para garantizar la precisión y eficacia educativa del simulador"
-          ]
+          startDate: "ago de 2024",
+          endDate: "dic de 2024",
+          duration: "5 meses",
+          summary: "Desarrollé un simulador de escritorio basado en Python para equipos de radionavegación y comunicación de helicópteros donde implementé modelos matemáticos para propagación de señales de radio y algoritmos de navegación, creé una interfaz amigable que permite a los instructores crear varios escenarios de entrenamiento mientras colaboré con expertos en aviación para garantizar la precisión y efectividad educativa del simulador."
         },
         {
-          title: "Investigador Científico",
-          company: "LNCC",
-          startDate: "Julio 2022",
-          avatar: "https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0s1bNXWUnTEWtS2F59V4BdOAGcqnsUMp0JDZIR",
-          endDate: "Junio 2024",
-          skills: ["Python", "C++", "IA", "LLM"],
-          description: [
-            "Analicé el rendimiento de ejecución experimental de algoritmos de optimización, implementé y probé varias estrategias de optimización para mejorar la eficiencia del algoritmo, incluyendo:",
-            "Migraciones de lenguajes de programación para mejoras de rendimiento",
-            "Mejoras en métodos de almacenamiento para mejorar el rendimiento de E/S",
-            "Técnicas de paralelización para eficiencia de procesamiento multinúcleo",
-            "Estrategias de optimización de caché para computación numérica",
-            "Desarrollé y entrené un modelo de aprendizaje automático para medir y predecir automáticamente el rendimiento de ejecución de algoritmos experimentales nuevos"
-          ]
-        },
-        {
-          title: "Desarrollador de Software, Coordinador de Batallón y CEO",
+          role: "CEO",
           company: "IME Júnior",
-          startDate: "Enero 2021",
-          avatar: "https://xudeeen93p.ufs.sh/f/2Dz3NNXn6l0sMlmZVxrDmx1ClgsIuwLbBVnz3TQavr4GASKe",
-          endDate: "Diciembre 2023",
-          skills: ["HTML", "CSS", "JavaScript", "Tailwind", "Firebase", "Next.js", "Node.js", "SQL", "Postgres"],
-          description: [
-            "Progresé de aprendiz a CEO a través de múltiples roles (Aprendiz, Miembro, Coordinador, Presidente)",
-            "Desarrollé tres proyectos principales para clientes: • Aplicación de diario personal React Native con sistema de pago para un dentista • Plataforma Next.js para Solar21 para gestionar referencias y beneficios de referidos • Sitio de comercio electrónico para obras de arte personalizadas con sistema de pago integrado",
-            "Planifiqué, organicé y enseñé a nuevos miembros las habilidades necesarias para convertirse en desarrolladores en el Batallón de Computación de la empresa",
-            "Serví como representante legal y administrativo, proporcionando dirección estratégica y asegurando operaciones cohesivas de la empresa mientras lideraba a la compañía para lograr el objetivo de R$100,000 en proyectos cerrados a través de la gestión efectiva del equipo y la coordinación del calendario, el ingreso más alto en la historia"
-          ]
+          startDate: "ene de 2023",
+          endDate: "dic de 2023",
+          duration: "1 año",
+          summary: "Responsable de establecer la dirección estratégica y gestionar el consejo ejecutivo. Mi liderazgo se enfocó en asegurar crecimiento sostenible, cohesión interna y alinear todas las operaciones con la visión a largo plazo de la organización mientras representaba a la empresa dentro del ecosistema de empresa junior y con socios institucionales."
+        },
+        {
+          role: "Jefe de Ingeniería de Software",
+          company: "IME Júnior",
+          startDate: "ago de 2022",
+          endDate: "dic de 2022",
+          duration: "5 meses",
+          summary: "Responsable de gestionar el grupo de Desarrollo de Software, liderando todo el ciclo de vida del proyecto desde la prospección de nuevos negocios y evaluación técnica hasta la entrega final de la solución. Enfocado en crear propuestas comerciales, definir alcance del proyecto, cronogramas y costos, y coordinar equipos de desarrollo para asegurar excelencia técnica y alineación estratégica con los objetivos del cliente."
+        },
+        {
+          role: "Consultor de Desarrollo de Software",
+          company: "IME Júnior",
+          startDate: "ene de 2022",
+          endDate: "jul de 2022",
+          duration: "7 meses",
+          summary: "Desarrollé soluciones web para clientes externos, participando en todo el ciclo de vida del proyecto, desde la recopilación de requisitos y comunicación directa con el cliente hasta la implementación y seguimiento de resultados. Stack utilizado: JavaScript, React, React-Native, TypeScript, Next.js, Node.js y Firebase."
         }
       ]
     },
