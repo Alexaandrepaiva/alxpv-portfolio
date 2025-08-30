@@ -49,7 +49,7 @@ export const en = {
         {
           role: "Associate Product Manager",
           company: "TutorMundi",
-          startDate: "abr de 2024",
+          startDate: "April 2024",
           endDate: "present",
           duration: "1 year 5 months",
           summary: "Responsible for translating company strategy into an actionable product roadmap, managing the end-to-end lifecycle of new features from concept and planning to launch and performance analysis. I crafted detailed product specifications to guide design and engineering teams and continuously monitored platform KPIs, including engagement, satisfaction, and feature adoption."
@@ -57,48 +57,48 @@ export const en = {
         {
           role: "Junior Software Developer",
           company: "TutorMundi",
-          startDate: "abr de 2024",
-          endDate: "sept 2025",
+          startDate: "April 2024",
+          endDate: "September 2025",
           duration: "1 year 6 months",
           summary: "Elevated to a role with expanded responsibilities within the software development lifecycle. I moved beyond task execution to actively contribute to technical discussions on solution architecture and the planning of complex features. In this role, I played a key part in developing new functionalities and application improvements that directly impacted thousands of users."
         },
         {
           role: "Software Developer Intern",
           company: "TutorMundi",
-          startDate: "april 2023",
-          endDate: "march 2024",
+          startDate: "April 2023",
+          endDate: "March 2024",
           duration: "1 year",
           summary: "Trained in the company's core technologies and tools, including Meteor.js, Node.js, and NoSQL (MongoDB), as well as design (Figma) and data analytics platforms (Amplitude, Metabase). I actively participated in the full development lifecycle, from providing support and fixing bugs in production to code maintenance and implementing new platform features, always focusing on delivering robust, scalable, and high-quality code aligned with company standards."
         },
         {
           role: "Software Developer",
           company: "CIAvEx",
-          startDate: "ago de 2024",
-          endDate: "dez de 2024",
+          startDate: "August 2024",
+          endDate: "December 2024",
           duration: "5 months",
           summary: "Engineered a Python-based desktop simulator for helicopter radio navigation and communication equipment where I implemented mathematical models for radio signal propagation and navigation algorithms, created a user-friendly interface allowing instructors to create various training scenarios while I collaborated with aviation experts to ensure simulator accuracy and educational effectiveness."
         },
         {
           role: "CEO",
           company: "IME Júnior",
-          startDate: "jan de 2023",
-          endDate: "dez de 2023",
+          startDate: "January 2023",
+          endDate: "December 2023",
           duration: "1 year",
           summary: "Responsible for setting the strategic direction and managing the executive board. My leadership focused on ensuring sustainable growth, internal cohesion, and aligning all operations with the organization's long-term vision while representing the company within the junior enterprise ecosystem and with institutional partners."
         },
         {
           role: "Head of Software Engineering",
           company: "IME Júnior",
-          startDate: "ago de 2022",
-          endDate: "dez de 2022",
+          startDate: "August 2022",
+          endDate: "December 2022",
           duration: "5 months",
           summary: "Responsible for managing the Software Development group, leading the entire project lifecycle from new business prospecting and technical assessment to final solution delivery. Focused on creating commercial proposals, defining project scope, timelines, and costs, and coordinating development teams to ensure technical excellence and strategic alignment with client objectives."
         },
         {
           role: "Software Development Consultant",
           company: "IME Júnior",
-          startDate: "jan de 2022",
-          endDate: "jul de 2022",
+          startDate: "January 2022",
+          endDate: "July 2022",
           duration: "7 months",
           summary: "Developed web solutions for external clients, participating in the entire project lifecycle, from requirement gathering and direct client communication to implementation and results tracking. Stack used: JavaScript, React, React-Native, TypeScript, Next.js, Node.js, and Firebase."
         }
