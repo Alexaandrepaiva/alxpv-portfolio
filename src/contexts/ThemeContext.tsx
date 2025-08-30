@@ -40,8 +40,10 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     
     // Apply initial theme to avoid flash
     const root = window.document.documentElement;
-    root.classList.remove("dark", "light");
-    root.classList.add(initialTheme);
+    if (initialTheme !== "dark") {
+      root.classList.remove("dark");
+      root.classList.add(initialTheme);
+    }
   }, []);
 
   // Update document class and localStorage when theme changes
@@ -64,6 +66,11 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     setTheme,
     toggleTheme
   };
+
+  // Prevent hydration mismatch by not rendering until mounted
+  if (!mounted) {
+    return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;
+  }
 
   return (
     <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>

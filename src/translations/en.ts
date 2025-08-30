@@ -3,6 +3,7 @@ export const en = {
     rights: "All rights reserved to Alexandre Paiva"
   },
   navbar: {
+    home: "Home",
     about: "About",
     experience: "Experience",
     education: "Education",
@@ -22,7 +23,7 @@ export const en = {
   hero: {
     title: "Alexandre Paiva",
     subtitles: ["Computer Engineer", "Fullstack Developer", "Product Manager", "Artificial Intelligence Enthusiast"],
-    description: "Computer Engineering professional specialized in transforming strategic vision into scalable tech products that deliver measurable impact. Led end-to-end development of high-impact features including live voice tutoring systems and AI-powered platforms with OCR capabilities at an edTech company, successfully turning ambitious concepts into production-ready solutions. My expertise spans product management and full-stack development, enabling me to bridge strategic vision with technical execution through data analysis, user research, and modern web technologies (React, Node.js, Next.js, AI integration). Having delivered diverse projects across industries—from construction cost-estimation to medical scheduling platforms—I combine technical proficiency, product intuition, and leadership experience to consistently transform business goals into scalable products that serve real customers.",
+    description: "Product Manager at TutorMundi",
     downloadCV: "Download CV"
   },
   languages: {
@@ -160,7 +161,13 @@ export const en = {
     }
   },
   about: {
-    title: "Engineering vision into reality",
-    description: "Computer Engineering professional specialized in transforming strategic vision into scalable tech products that deliver measurable impact. Led end-to-end development of high-impact features including live voice tutoring systems and AI-powered platforms with OCR capabilities at an edTech company, successfully turning ambitious concepts into production-ready solutions. My expertise spans product management and full-stack development, enabling me to bridge strategic vision with technical execution through data analysis, user research, and modern web technologies (React, Node.js, Next.js, AI integration). Having delivered diverse projects across industries—from construction cost-estimation to medical scheduling platforms—I combine technical proficiency, product intuition, and leadership experience to consistently transform business goals into scalable products that serve real customers."
+    title: "Alexandre Paiva",
+    subtitle: "ENGINEERING VISION INTO REALITY",
+    paragraphs: [
+      "Computer Engineering professional specialized in transforming strategic vision into scalable tech products that deliver measurable impact.",
+      "Led end-to-end development of high-impact features including live voice tutoring systems and AI-powered platforms with OCR capabilities at an edTech company, successfully turning ambitious concepts into production-ready solutions.",
+      "My expertise spans product management and full-stack development, enabling me to bridge strategic vision with technical execution through data analysis, user research, and modern web technologies (React, Node.js, Next.js, AI integration).",
+      "Having delivered diverse projects across industries—from construction cost-estimation to medical scheduling platforms—I combine technical proficiency, product intuition, and leadership experience to consistently transform business goals into scalable products that serve real customers."
+    ]
   }
 }

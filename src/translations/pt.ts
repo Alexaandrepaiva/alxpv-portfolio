@@ -3,6 +3,7 @@ export const pt = {
     rights: "Todos os direitos reservados a Alexandre Paiva"
   },
   navbar: {
+    home: "Início",
     about: "Sobre",
     experience: "Experiência",
     education: "Educação",
@@ -22,7 +23,7 @@ export const pt = {
   hero: {
     title: "Alexandre Paiva",
     subtitles: ["Engenheiro de Computação", "Desenvolvedor Fullstack", "Gerente de Produto", "Entusiasta de Inteligência Artificial"],
-    description: "Engenheiro da Computação especializado em transformar visão estratégica em produtos tecnológicos escaláveis que entregam impacto mensurável. Liderei desenvolvimento end-to-end de funcionalidades de alto impacto incluindo sistemas de tutoria por voz ao vivo e plataformas com IA e capacidades de OCR de escrita manual em empresa de edTech, transformando conceitos ambiciosos em soluções prontas para produção. Minha expertise abrange gestão de produtos e desenvolvimento full-stack, permitindo conectar visão estratégica com execução técnica através de análise de dados, pesquisa de usuários e tecnologias web modernas (React, Node.js, Next.js, integração com IA). Tendo entregue projetos diversos em múltiplas indústrias—desde estimativa de custos de construção até plataformas de agendamento médico—combino proficiência técnica, intuição de produto e experiência em liderança para consistentemente transformar objetivos de negócio em produtos escaláveis que atendem clientes reais.",
+    description: "Gerente de Produto na TutorMundi",
     downloadCV: "Baixar CV"
   },
   languages: {
@@ -160,7 +161,13 @@ export const pt = {
     }
   },
   about: {
-    title: "Transformando visão em realidade",
-    description: "Engenheiro da Computação especializado em transformar visão estratégica em produtos tecnológicos escaláveis que entregam impacto mensurável. Liderei desenvolvimento end-to-end de funcionalidades de alto impacto incluindo sistemas de tutoria por voz ao vivo e plataformas com IA e capacidades de OCR de escrita manual em empresa de edTech, transformando conceitos ambiciosos em soluções prontas para produção. Minha expertise abrange gestão de produtos e desenvolvimento full-stack, permitindo conectar visão estratégica com execução técnica através de análise de dados, pesquisa de usuários e tecnologias web modernas (React, Node.js, Next.js, integração com IA). Tendo entregue projetos diversos em múltiplas indústrias—desde estimativa de custos de construção até plataformas de agendamento médico—combino proficiência técnica, intuição de produto e experiência em liderança para consistentemente transformar objetivos de negócio em produtos escaláveis que atendem clientes reais."
+    title: "Alexandre Paiva",
+    subtitle: "Transformando visão em realidade",
+    paragraphs: [
+      "Engenheiro da Computação especializado em transformar visão estratégica em produtos tecnológicos escaláveis que entregam impacto mensurável.",
+      "Liderei desenvolvimento end-to-end de funcionalidades de alto impacto incluindo sistemas de tutoria por voz ao vivo e plataformas com IA e capacidades de OCR de escrita manual em empresa de edTech, transformando conceitos ambiciosos em soluções prontas para produção.",
+      "Minha expertise abrange gestão de produtos e desenvolvimento full-stack, permitindo conectar visão estratégica com execução técnica através de análise de dados, pesquisa de usuários e tecnologias web modernas (React, Node.js, Next.js, integração com IA).",
+      "Tendo entregue projetos diversos em múltiplas indústrias—desde estimativa de custos de construção até plataformas de agendamento médico—combino proficiência técnica, intuição de produto e experiência em liderança para consistentemente transformar objetivos de negócio em produtos escaláveis que atendem clientes reais."
+    ]
   }
 }

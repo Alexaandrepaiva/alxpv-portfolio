@@ -30,17 +30,16 @@ export function Layout({ children }: LayoutProps) {
   };
 
   return (
-    <div className="flex flex-col min-h-screen md:h-screen">
+    <div className="flex flex-col min-h-screen">
       {/* Navbar */}
       <Navbar />
       
       {/* Main Content */}
-      <main className="flex-1 w-full md:pt-14 md:overflow-hidden">
+      <main className="flex-1 w-full md:pt-14 overflow-auto">
         {children}
       </main>
       
       {/* Footer */}
-      <div className="w-full h-px bg-border flex-shrink-0" />
       <Footer />
       
       {/* Mobile Floating Menu Button */}

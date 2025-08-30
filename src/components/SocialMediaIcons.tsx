@@ -1,13 +1,19 @@
 import { Github, Linkedin, Twitter } from "lucide-react";
 import { useLanguage } from "~/contexts/LanguageContext";
 import { useTheme } from "~/contexts/ThemeContext";
+import { useEffect, useState } from "react";
 
 export function SocialMediaIcons() {
   const { translations } = useLanguage();
   const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
   
   const iconSize = 32;
-  const iconColor = theme === "dark" ? "#ffffff" : "#000000";
+  const iconColor = mounted ? (theme === "dark" ? "#ffffff" : "#000000") : "#ffffff"; // Default to white for SSR
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   
   return (
     <div className="flex items-center space-x-6 mt-4">
