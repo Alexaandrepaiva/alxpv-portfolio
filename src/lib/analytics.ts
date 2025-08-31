@@ -45,9 +45,18 @@ export class Analytics {
     try {
       amplitude.track(eventName, properties || {});
     } catch (error) {
-      // Silently fail to avoid console spam
       if (process.env.NODE_ENV === 'development') {
-        console.warn('Analytics tracking failed:', eventName, error);
+        const errorMessage = error instanceof Error ? error.message : String(error);
+        const errorStack = error instanceof Error ? error.stack : undefined;
+        
+        console.group('🔍 Analytics Tracking Failed');
+        console.warn('Event:', eventName);
+        console.warn('Properties:', properties);
+        console.warn('Error Message:', errorMessage);
+        if (errorStack) {
+          console.warn('Stack Trace:', errorStack);
+        }
+        console.groupEnd();
       }
     }
   }
