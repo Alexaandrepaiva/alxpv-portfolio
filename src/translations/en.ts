@@ -7,8 +7,7 @@ export const en = {
     about: "About",
     experience: "Experience",
     education: "Education",
-    projects: "Projects",
-    contact: "Contact"
+    projects: "Projects"
   },
   theme: {
     toggle: "Toggle theme",
@@ -141,13 +140,6 @@ export const en = {
           technologies: ["React", "Node.js", "PostgreSQL"]
         }
       ]
-    },
-
-    contact: {
-      title: "Reach Out",
-      email: "Email",
-      message: "Message",
-      send: "Send Message"
     }
   },
   about: {
