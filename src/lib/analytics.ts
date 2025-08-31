@@ -9,12 +9,14 @@ export class Analytics {
   private static eventQueue: QueuedEvent[] = [];
   private static isInitialized = false;
   private static initializationPromise: Promise<void> | null = null;
+  private static isDisabled = false;
+  private static isDevelopmentMode = process.env.NODE_ENV === 'development';
 
   /**
    * Check if analytics is ready to track events
    */
   private static isReady(): boolean {
-    return this.isInitialized && typeof window !== 'undefined';
+    return this.isInitialized && !this.isDisabled && typeof window !== 'undefined';
   }
 
   /**
@@ -39,25 +41,38 @@ export class Analytics {
   }
 
   /**
+   * Log event locally in development mode
+   */
+  private static logEventLocally(eventName: string, properties?: Record<string, any>): void {
+    console.group(`📊 Analytics Event: ${eventName}`);
+    console.log('Event Name:', eventName);
+    if (properties && Object.keys(properties).length > 0) {
+      console.log('Properties:', properties);
+    }
+    console.log('Timestamp:', new Date().toISOString());
+    console.groupEnd();
+  }
+
+  /**
    * Track event immediately without queuing
    */
   private static trackImmediate(eventName: string, properties?: Record<string, any>): void {
+    if (this.isDisabled) {
+      return;
+    }
+
+    // In development mode, only log locally
+    if (this.isDevelopmentMode) {
+      this.logEventLocally(eventName, properties);
+      return;
+    }
+
+    // In production mode, send to Amplitude
     try {
       amplitude.track(eventName, properties || {});
     } catch (error) {
-      if (process.env.NODE_ENV === 'development') {
-        const errorMessage = error instanceof Error ? error.message : String(error);
-        const errorStack = error instanceof Error ? error.stack : undefined;
-        
-        console.group('🔍 Analytics Tracking Failed');
-        console.warn('Event:', eventName);
-        console.warn('Properties:', properties);
-        console.warn('Error Message:', errorMessage);
-        if (errorStack) {
-          console.warn('Stack Trace:', errorStack);
-        }
-        console.groupEnd();
-      }
+      // In production, silently fail to avoid console spam
+      console.warn('Analytics tracking failed:', eventName);
     }
   }
 
@@ -67,6 +82,19 @@ export class Analytics {
   static markAsInitialized(): void {
     this.isInitialized = true;
     this.processQueuedEvents();
+  }
+
+  /**
+   * Mark analytics as disabled (when no API key is provided)
+   */
+  static markAsDisabled(): void {
+    this.isDisabled = true;
+    this.isInitialized = true;
+    // In development mode, we still want to log events locally
+    if (!this.isDevelopmentMode) {
+      // Clear the queue since we won't be processing events in production
+      this.eventQueue = [];
+    }
   }
 
   /**
@@ -86,13 +114,22 @@ export class Analytics {
       return;
     }
 
+    // In development mode, always log locally regardless of initialization status
+    if (this.isDevelopmentMode) {
+      this.logEventLocally(eventName, properties);
+      return;
+    }
+
+    // In production mode, follow normal flow
     if (this.isReady()) {
       this.trackImmediate(eventName, properties);
       return;
     }
 
-    // Queue event if not ready
-    this.eventQueue.push({ eventName, properties });
+    // Queue event if not ready (production only)
+    if (!this.isDisabled) {
+      this.eventQueue.push({ eventName, properties });
+    }
   }
 
   /**
