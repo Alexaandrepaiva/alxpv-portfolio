@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Button } from "~/components/ui/button";
 import { useLanguage } from "~/contexts/LanguageContext";
+import { Analytics } from "~/lib/analytics";
 import { useEffect, useState } from "react";
 
 export function HeroSection() {
@@ -63,6 +64,7 @@ export function HeroSection() {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="underline decoration-1 cursor-pointer text-muted-foreground hover:text-muted-foreground"
+                  onClick={() => Analytics.track('company button clicked')}
                 >
                   TutorMundi
                 </a>
@@ -73,7 +75,13 @@ export function HeroSection() {
         </p>
         
         <Button size="lg" asChild>
-          <a href={`/cv-${language}.pdf`} download={`cv-${language}.pdf`}>{translations.hero.downloadCV}</a>
+          <a 
+            href={`/cv-${language}.pdf`} 
+            download={`cv-${language}.pdf`}
+            onClick={() => Analytics.track('cv button clicked')}
+          >
+            {translations.hero.downloadCV}
+          </a>
         </Button>
       </div>
     </section>
