@@ -16,6 +16,7 @@ export const env = createEnv({
    * `NEXT_PUBLIC_`.
    */
   client: {
+    // Always optional since we handle local logging in development
     NEXT_PUBLIC_AMPLITUDE_API_KEY: z.string().optional(),
   },
 
