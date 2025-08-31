@@ -30,6 +30,11 @@ export function AboutSection() {
             </div>
           </div>
           
+          {/* Experience Stats - Mobile Only */}
+          <div className="md:hidden flex justify-center">
+            <ExperienceStats />
+          </div>
+          
           {/* Text */}
           <div className="flex flex-col gap-6 text-center md:text-left md:justify-center">
             {translations.about.paragraphs.map((paragraph, index) => (
@@ -38,8 +43,8 @@ export function AboutSection() {
               </p>
             ))}
             
-            {/* Experience Stats */}
-            <div className="mt-4 flex justify-center md:justify-start">
+            {/* Experience Stats - Desktop Only */}
+            <div className="mt-4 hidden md:flex justify-start">
               <ExperienceStats />
             </div>
           </div>
