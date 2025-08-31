@@ -7,8 +7,7 @@ export const pt = {
     about: "Sobre",
     experience: "Experiência",
     education: "Educação",
-    projects: "Projetos",
-    contact: "Contato"
+    projects: "Projetos"
   },
   theme: {
     toggle: "Alternar tema",
@@ -141,13 +140,6 @@ export const pt = {
           technologies: ["React", "Node.js", "PostgreSQL"]
         }
       ]
-    },
-
-    contact: {
-      title: "Fale Comigo",
-      email: "Email",
-      message: "Mensagem",
-      send: "Enviar Mensagem"
     }
   },
   about: {

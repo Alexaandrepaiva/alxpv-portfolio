@@ -17,7 +17,6 @@ const navItems = [
   { href: "/experience", label: "experience" },
   { href: "/education", label: "education" },
   { href: "/projects", label: "projects" },
-  { href: "/contact", label: "contact" },
 ];
 
 export function Layout({ children }: LayoutProps) {

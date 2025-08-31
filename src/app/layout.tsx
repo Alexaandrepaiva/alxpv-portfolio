@@ -2,6 +2,7 @@ import "~/styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
+import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
@@ -26,6 +27,24 @@ export default function RootLayout({
           </LanguageProvider>
         </ThemeProvider>
         <Analytics />
+        <Script
+          src="https://cdn.amplitude.com/libs/analytics-browser-2.11.1-min.js.gz"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="https://cdn.amplitude.com/libs/plugin-session-replay-browser-1.8.0-min.js.gz"
+          strategy="afterInteractive"
+        />
+        <Script id="amplitude-init" strategy="afterInteractive">
+          {`
+            window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));
+            window.amplitude.init('71c4276fdc59ce0affee428d2c977367', {
+              autocapture: {
+                elementInteractions: true
+              }
+            });
+          `}
+        </Script>
       </body>
     </html>
   );
