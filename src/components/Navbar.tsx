@@ -3,6 +3,7 @@
 import { useLanguage } from "~/contexts/LanguageContext";
 import { LanguageSelector } from "~/components/LanguageSelector";
 import { ThemeToggle } from "~/components/ThemeToggle";
+import { Analytics } from "~/lib/analytics";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -21,7 +22,11 @@ export function Navbar() {
       <div className="mx-auto max-w-[90rem] px-4">
         <div className="flex h-14 items-center justify-between">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
+            <Link 
+              href="/" 
+              className="flex items-center space-x-2"
+              onClick={() => Analytics.track('logo clicked')}
+            >
               <Image src="/alxpv-black.png" alt="ALXPV Logo" width={80} height={30} className="h-auto dark:hidden" priority />
               <Image src="/alxpv-white.png" alt="ALXPV Logo" width={80} height={30} className="h-auto hidden dark:block" priority />
             </Link>
@@ -34,6 +39,7 @@ export function Navbar() {
                   key={item.href}
                   href={item.href}
                   className="group inline-flex h-9 w-max items-center justify-center px-4 py-2 text-sm font-medium transition-colors hover:text-primary focus:outline-none disabled:pointer-events-none disabled:opacity-50"
+                  onClick={() => Analytics.trackWithLabel(`${item.label} button clicked`, 'navbar')}
                 >
                   {translations.navbar[item.label as keyof typeof translations.navbar]}
                 </Link>

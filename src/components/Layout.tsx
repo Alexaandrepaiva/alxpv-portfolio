@@ -6,6 +6,7 @@ import { Footer } from "~/components/Footer";
 import { Button } from "~/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useLanguage } from "~/contexts/LanguageContext";
+import { Analytics } from "~/lib/analytics";
 import Link from "next/link";
 
 interface LayoutProps {
@@ -73,7 +74,10 @@ export function Layout({ children }: LayoutProps) {
                     key={item.href}
                     href={item.href}
                     className="flex items-center px-4 py-4 text-lg font-medium rounded-lg hover:bg-muted transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={() => {
+                      Analytics.trackWithLabel(`${item.label} button clicked`, 'mobile');
+                      setIsMobileMenuOpen(false);
+                    }}
                   >
                     {translations.navbar[item.label as keyof typeof translations.navbar]}
                   </Link>

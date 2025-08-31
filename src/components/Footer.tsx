@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "~/contexts/LanguageContext";
+import { Analytics } from "~/lib/analytics";
 
 export function Footer() {
   const { translations } = useLanguage();
@@ -13,6 +14,7 @@ export function Footer() {
           target="_blank" 
           rel="noopener noreferrer"
           className="text-sm font-medium transition-colors hover:text-primary cursor-pointer"
+          onClick={() => Analytics.trackWithLabel('footer button clicked', 'linkedin')}
         >
           LinkedIn
         </a>
@@ -21,6 +23,7 @@ export function Footer() {
           target="_blank" 
           rel="noopener noreferrer"
           className="text-sm font-medium transition-colors hover:text-primary cursor-pointer"
+          onClick={() => Analytics.trackWithLabel('footer button clicked', 'github')}
         >
           GitHub
         </a>
@@ -29,6 +32,7 @@ export function Footer() {
           target="_blank" 
           rel="noopener noreferrer"
           className="text-sm font-medium transition-colors hover:text-primary cursor-pointer"
+          onClick={() => Analytics.trackWithLabel('footer button clicked', 'twitter')}
         >
           Twitter
         </a>

@@ -4,6 +4,7 @@ import { Moon, Sun } from "lucide-react";
 import { Button } from "~/components/ui/button";
 import { useTheme } from "~/contexts/ThemeContext";
 import { useLanguage } from "~/contexts/LanguageContext";
+import { Analytics } from "~/lib/analytics";
 import { useEffect, useState } from "react";
 
 export function ThemeToggle() {
@@ -20,11 +21,17 @@ export function ThemeToggle() {
     return <Button size="icon" variant="ghost" className="w-9 h-9" disabled />;
   }
 
+  const handleToggleTheme = () => {
+    const newTheme = theme === 'dark' ? 'light' : 'dark';
+    Analytics.trackWithLabel('theme button clicked', newTheme);
+    toggleTheme();
+  };
+
   return (
     <Button
       variant="ghost"
       size="icon"
-      onClick={toggleTheme}
+      onClick={handleToggleTheme}
       className="relative w-9 h-9 overflow-hidden flex items-center justify-center"
       title={theme === "dark" ? translations.theme.light : translations.theme.dark}
     >
