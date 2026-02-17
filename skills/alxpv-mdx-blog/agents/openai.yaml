@@ -1,0 +1,4 @@
+display_name: "ALXPV: MDX blog"
+short_description: "Design and implement a local MDX blog (ADR-first)."
+default_prompt: "Plan and implement the blog using local MDX content. Create an ADR for MDX rendering approach before adding dependencies. Follow AGENTS.md conventions, keep changes minimal, and ensure npm run check passes."
+

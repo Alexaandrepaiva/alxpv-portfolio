@@ -1,0 +1,4 @@
+display_name: "ALXPV: i18n (en/es/pt)"
+short_description: "Keep translation keys aligned and UI strings consistent."
+default_prompt: "Update translations and any dependent UI so en/es/pt remain in sync. Avoid hard-coded strings, keep changes minimal, and ensure npm run check passes."
+

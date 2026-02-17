@@ -1,0 +1,4 @@
+display_name: "ALXPV: Next.js feature work"
+short_description: "Implement portfolio features using existing Next.js + Tailwind + shadcn conventions."
+default_prompt: "Implement the requested feature in this repo using the conventions in AGENTS.md (server components by default, Tailwind/shadcn UI, translations parity, ADR for significant decisions). Keep changes minimal and run npm run check."
+
