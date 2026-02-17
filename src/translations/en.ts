@@ -20,8 +20,8 @@ export const en = {
   },
   hero: {
     title: "Alexandre Paiva",
-    subtitles: ["Engineering Vision into Reality", "Computer Engineer", "Product Manager", "Software Developer", "Artificial Intelligence Enthusiast", "Tennis Player", "Aspiring Sommelier"],
-    description: "Product Manager at TutorMundi",
+    subtitles: ["Engineering Vision into Reality", "Computer Engineer", "Agentic Product Engineer", "Software Developer", "Artificial Intelligence Enthusiast", "Tennis Player", "Aspiring Sommelier"],
+    description: "Agentic Product Engineer",
     downloadCV: "Download CV"
   },
   languages: {
@@ -45,12 +45,20 @@ export const en = {
       title: "Built Through Doing",
       items: [
         {
-          role: "Associate Product Manager",
+          role: "Head of Product",
+          company: "TutorMundi",
+          startDate: "October 2025",
+          endDate: "February 2026",
+          duration: "5 months",
+          summary: "Led product vision and growth strategy for an EdTech platform connecting students with tutors. Focused on quality restructuring to turn user experience into a competitive advantage while ensuring operational excellence and satisfaction at scale. Increased CSAT by 16%, reduced critical accounts by 88.8%, and helped consolidate a 4.9★ rating across 500k+ downloads on App Store and Play Store."
+        },
+        {
+          role: "Product Manager",
           company: "TutorMundi",
           startDate: "April 2024",
-          endDate: "present",
-          duration: "1 year 5 months",
-          summary: "Responsible for translating company strategy into an actionable product roadmap, managing the end-to-end lifecycle of new features from concept and planning to launch and performance analysis. I crafted detailed product specifications to guide design and engineering teams and continuously monitored platform KPIs, including engagement, satisfaction, and feature adoption."
+          endDate: "September 2025",
+          duration: "1 year 6 months",
+          summary: "Orchestrated the roadmap from concept to launch, focusing on AI integration and high-engagement features. Spearheaded the AI Writing Corrector launch with Handwriting OCR and instant ENEM-style feedback, launched the Live Voice Call feature that became the platform's highest-value interaction channel, and optimized Q&A and essay grading algorithms using user research and usage metrics."
         },
         {
           role: "Junior Software Developer",
@@ -58,7 +66,7 @@ export const en = {
           startDate: "April 2024",
           endDate: "September 2025",
           duration: "1 year 6 months",
-          summary: "Elevated to a role with expanded responsibilities within the software development lifecycle. I moved beyond task execution to actively contribute to technical discussions on solution architecture and the planning of complex features. In this role, I played a key part in developing new functionalities and application improvements that directly impacted thousands of users."
+          summary: "Took on expanded responsibilities across backend and architecture development using Meteor.js and MongoDB, bridging product requirements and technical execution. Built the Voice Call infrastructure supporting 20k+ session hours in the first six months, architected TutorMundi's AI 'Teco' powering 85% of tutoring sessions in H1 2025, and scaled backend architecture to support 500,000+ tutoring sessions without performance degradation."
         },
         {
           role: "Software Developer Intern",

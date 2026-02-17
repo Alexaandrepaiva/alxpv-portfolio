@@ -20,8 +20,8 @@ export const es = {
   },
   hero: {
     title: "Alexandre Paiva",
-    subtitles: ["Convirtiendo Visión en Realidad", "Ingeniero en Computación", "Gerente de Producto", "Desarrollador de Software", "Entusiasta de la Inteligencia Artificial", "Jugador de Tenis", "Aspirante a Sommelier"],
-    description: "Gerente de Producto en TutorMundi",
+    subtitles: ["Convirtiendo Visión en Realidad", "Ingeniero en Computación", "Agentic Product Engineer", "Desarrollador de Software", "Entusiasta de la Inteligencia Artificial", "Jugador de Tenis", "Aspirante a Sommelier"],
+    description: "Agentic Product Engineer",
     downloadCV: "Descargar CV"
   },
   languages: {
@@ -45,12 +45,20 @@ export const es = {
       title: "Hitos de Carrera",
       items: [
         {
-          role: "Gerente de Producto Asociado",
+          role: "Head of Product",
+          company: "TutorMundi",
+          startDate: "Octubre 2025",
+          endDate: "Febrero 2026",
+          duration: "5 meses",
+          summary: "Lideró la visión de producto y la estrategia de crecimiento para una plataforma EdTech que conecta estudiantes y tutores. Se enfocó en reestructurar la calidad para convertir la experiencia de usuario en ventaja competitiva, manteniendo excelencia operativa y satisfacción a gran escala. Aumentó el CSAT en 16%, redujo cuentas críticas en 88,8% y consolidó una calificación de 4,9★ con más de 500 mil descargas."
+        },
+        {
+          role: "Product Manager",
           company: "TutorMundi",
           startDate: "Abril 2024",
-          endDate: "presente",
-          duration: "1 año 5 meses",
-          summary: "Responsable de traducir la estrategia de la empresa en una hoja de ruta de producto accionable, gestionando el ciclo de vida completo de nuevas funcionalidades desde el concepto y planificación hasta el lanzamiento y análisis de rendimiento. Elaboré especificaciones detalladas de producto para guiar a los equipos de diseño e ingeniería y monitoreé continuamente los KPIs de la plataforma, incluyendo participación, satisfacción y adopción de funcionalidades."
+          endDate: "Septiembre 2025",
+          duration: "1 año 6 meses",
+          summary: "Orquestó el roadmap desde el concepto hasta el lanzamiento, con foco en integración de IA y funcionalidades de alto engagement. Lideró el lanzamiento del Corrector de Escritura con IA con OCR de escritura manual y feedback instantáneo estilo ENEM, lanzó la funcionalidad de llamada de voz en vivo que se volvió el canal de interacción de mayor valor de la plataforma, y optimizó los algoritmos de corrección de preguntas y ensayos usando investigación de usuarios y métricas de uso."
         },
         {
           role: "Desarrollador de Software Junior",
@@ -58,7 +66,7 @@ export const es = {
           startDate: "Abril 2024",
           endDate: "Septiembre 2025",
           duration: "1 año 6 meses",
-          summary: "Promovido a un rol con responsabilidades expandidas dentro del ciclo de vida de desarrollo de software. Evolucioné más allá de la ejecución de tareas para contribuir activamente en discusiones técnicas sobre arquitectura de soluciones y planificación de funcionalidades complejas. En este rol, desempeñé un papel clave en el desarrollo de nuevas funcionalidades y mejoras de aplicación que impactaron directamente a miles de usuarios."
+          summary: "Asumió responsabilidades ampliadas en backend y arquitectura usando Meteor.js y MongoDB, conectando requisitos de producto con ejecución técnica. Construyó la infraestructura de llamadas de voz que soportó más de 20 mil horas de sesiones en los primeros seis meses, arquitectó 'Teco', la IA de TutorMundi, que impulsó el 85% de las sesiones de tutoría en el primer semestre de 2025, y escaló la arquitectura backend para más de 500.000 sesiones sin degradación de rendimiento."
         },
         {
           role: "Pasante de Desarrollador de Software",
