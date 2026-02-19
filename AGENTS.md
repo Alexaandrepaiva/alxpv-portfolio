@@ -4,9 +4,18 @@ This repo is a personal portfolio (Next.js App Router) to showcase story, experi
 
 ## North Star
 - Keep changes small, readable, and consistent with existing patterns.
-- Prefer “boring” solutions over clever ones.
+- Prefer "boring" solutions over clever ones.
 - Avoid new dependencies unless clearly justified (record an ADR).
-- Don’t break navigation, theme, translations, or build/lint.
+- Don't break navigation, theme, translations, or build/lint.
+
+## Skills (`.codex/`)
+Domain-specific guidance for agents:
+- **alxpv-context** — Project overview and orchestration (read first for new features)
+- **alxpv-frontend** — React/Next.js component patterns
+- **alxpv-api** — Backend, data, and analytics conventions
+- **alxpv-style** — Design tokens, animations, visual consistency
+
+Additional skills in `skills/`: `alxpv-i18n`, `alxpv-mdx-blog`, `alxpv-nextjs`
 
 ## Tech Stack (current)
 - Next.js (App Router) under `src/app/`
